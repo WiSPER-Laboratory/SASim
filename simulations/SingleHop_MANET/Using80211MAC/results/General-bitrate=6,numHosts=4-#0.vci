@@ -1,0 +1,1105 @@
+file 5304150 1511608374                                         
+version 2
+run General-1-20171125-03:12:23-15324
+attr configname General
+attr datetime 20171125-03:12:23
+attr experiment General
+attr inifile omnetpp_Sim1.ini
+attr iterationvars "$bitrate=6, $numHosts=4"
+attr iterationvarsf bitrate=6,numHosts=4-
+attr measurement "$bitrate=6, $numHosts=4"
+attr network Using80211MAC
+attr processid 15324
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 1
+attr seedset 1
+itervar bitrate 6
+itervar numHosts 4
+param Using80211MAC.configurator.addDefaultRoutes true
+param Using80211MAC.configurator.addStaticRoutes true
+param Using80211MAC.configurator.addSubnetRoutes true
+param Using80211MAC.configurator.assignAddresses true
+param Using80211MAC.configurator.assignDisjunctSubnetAddresses true
+param Using80211MAC.configurator.config "xml(\"<config><interface hosts='**' address='10.x.x.x' netmask='255.x.x.x'/></config>\")"
+param Using80211MAC.configurator.dumpAddresses false
+param Using80211MAC.configurator.dumpConfig "\"\""
+param Using80211MAC.configurator.dumpLinks false
+param Using80211MAC.configurator.dumpRoutes false
+param Using80211MAC.configurator.dumpTopology false
+param Using80211MAC.configurator.minLinkWeight 1E-3
+param Using80211MAC.configurator.optimizeRoutes true
+param Using80211MAC.host[*].energyGeneratorType "\"\""
+param Using80211MAC.host[*].energyManagementType "\"SimpleEpEnergyManagement\""
+param Using80211MAC.host[*].energyStorage.initialCapacity "uniform(0.1 * energyStorage.nominalCapacity, energyStorage.nominalCapacity)"
+param Using80211MAC.host[*].energyStorage.nominalCapacity 0.05J
+param Using80211MAC.host[*].energyStorageType "\"SimpleEpEnergyStorage\""
+param Using80211MAC.host[*].eth[*].csmacdSupport false
+param Using80211MAC.host[*].eth[*].egressTCType "\"\""
+param Using80211MAC.host[*].eth[*].encap.interfaceTableModule absPath(interfaceTableModule)
+param Using80211MAC.host[*].eth[*].encap.useSNAP false
+param Using80211MAC.host[*].eth[*].encapType "\"EtherEncap\""
+param Using80211MAC.host[*].eth[*].ingressTCType "\"\""
+param Using80211MAC.host[*].eth[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param Using80211MAC.host[*].eth[*].numInputHooks 0
+param Using80211MAC.host[*].eth[*].numOutputHooks 0
+param Using80211MAC.host[*].eth[*].qeue.pauseQueue.queueName "\"pauseQueue\""
+param Using80211MAC.host[*].eth[*].queue.pauseQueue.frameCapacity 100
+param Using80211MAC.host[*].eth[*].queueType "\"\""
+param Using80211MAC.host[*].forwarding false
+param Using80211MAC.host[*].hasStatus true
+param Using80211MAC.host[*].interfaceTable.displayAddresses false
+param Using80211MAC.host[*].lo0.interfaceTableModule "absPath(\".interfaceTable\")"
+param Using80211MAC.host[*].lo0.lo.mtu 4470B
+param Using80211MAC.host[*].lo0.numInputHooks 0
+param Using80211MAC.host[*].lo0.numOutputHooks 0
+param Using80211MAC.host[*].mobility.changeAngleBy "normal(0deg, 30deg)"
+param Using80211MAC.host[*].mobility.changeInterval "truncnormal(2s, 0.5s)"
+param Using80211MAC.host[*].mobility.constraintAreaMaxX 60m
+param Using80211MAC.host[*].mobility.constraintAreaMaxY 40m
+param Using80211MAC.host[*].mobility.constraintAreaMaxZ 0m
+param Using80211MAC.host[*].mobility.constraintAreaMinX 0m
+param Using80211MAC.host[*].mobility.constraintAreaMinY 0m
+param Using80211MAC.host[*].mobility.constraintAreaMinZ 0m
+param Using80211MAC.host[*].mobility.coordinateSystemModule "\"\""
+param Using80211MAC.host[*].mobility.initFromDisplayString false
+param Using80211MAC.host[*].mobility.speed "truncnormal(20mps, 8mps)"
+param Using80211MAC.host[*].mobility.startAngle "uniform(0deg, 360deg)"
+param Using80211MAC.host[*].mobility.updateInterval 100ms
+param Using80211MAC.host[*].mobility.visualizeMobility true
+param Using80211MAC.host[*].mobility.visualRepresentation "\"^\""
+param Using80211MAC.host[*].mobilityType "\"MassMobility\""
+param Using80211MAC.host[*].multicastForwarding false
+param Using80211MAC.host[*].networkLayer.arp.cacheTimeout 120s
+param Using80211MAC.host[*].networkLayer.arp.retryCount 3
+param Using80211MAC.host[*].networkLayer.arp.retryTimeout 1s
+param Using80211MAC.host[*].networkLayer.arpType "\"GlobalARP\""
+param Using80211MAC.host[*].networkLayer.configurator.configureRoutingTable true
+param Using80211MAC.host[*].networkLayer.configurator.networkConfiguratorModule "\"configurator\""
+param Using80211MAC.host[*].networkLayer.igmp.enabled true
+param Using80211MAC.host[*].networkLayer.igmp.lastMemberQueryInterval 1s
+param Using80211MAC.host[*].networkLayer.igmp.queryInterval 125s
+param Using80211MAC.host[*].networkLayer.igmp.queryResponseInterval 10s
+param Using80211MAC.host[*].networkLayer.igmp.robustnessVariable 2
+param Using80211MAC.host[*].networkLayer.igmp.unsolicitedReportInterval 10s
+param Using80211MAC.host[*].networkLayer.igmpType "\"IGMPv2\""
+param Using80211MAC.host[*].networkLayer.interfaceTableModule "absPath(\".interfaceTable\")"
+param Using80211MAC.host[*].networkLayer.ip.arpModule "absPath(\".arp\")"
+param Using80211MAC.host[*].networkLayer.ip.forceBroadcast false
+param Using80211MAC.host[*].networkLayer.ip.fragmentTimeout 60s
+param Using80211MAC.host[*].networkLayer.ip.icmpModule "absPath(\".icmp\")"
+param Using80211MAC.host[*].networkLayer.ip.multicastTimeToLive 32
+param Using80211MAC.host[*].networkLayer.ip.procDelay 0s
+param Using80211MAC.host[*].networkLayer.ip.timeToLive 32
+param Using80211MAC.host[*].networkLayer.ip.useProxyARP true
+param Using80211MAC.host[*].networkLayer.proxyARP false
+param Using80211MAC.host[*].networkLayerType "\"IPv4NetworkLayer\""
+param Using80211MAC.host[*].numExtInterfaces 0
+param Using80211MAC.host[*].numPcapRecorders 0
+param Using80211MAC.host[*].numRadios 1
+param Using80211MAC.host[*].numSctpApps 0
+param Using80211MAC.host[*].numTcpApps 0
+param Using80211MAC.host[*].numTunInterfaces 0
+param Using80211MAC.host[*].numUdpApps 1
+param Using80211MAC.host[*].osgModel "\"\""
+param Using80211MAC.host[*].osgModelColor "\"\""
+param Using80211MAC.host[*].pcapRecorder[*].alwaysFlush false
+param Using80211MAC.host[*].pcapRecorder[*].dumpBadFrames true
+param Using80211MAC.host[*].pcapRecorder[*].moduleNamePatterns "\"wlan[*] eth[*] ppp[*] ext[*]\""
+param Using80211MAC.host[*].pcapRecorder[*].pcapFile "\"\""
+param Using80211MAC.host[*].pcapRecorder[*].receivingSignalNames "\"packetReceivedFromLower\""
+param Using80211MAC.host[*].pcapRecorder[*].sendingSignalNames "\"packetSentToLower\""
+param Using80211MAC.host[*].pcapRecorder[*].snaplen 65535
+param Using80211MAC.host[*].pcapRecorder[*].verbose false
+param Using80211MAC.host[*].ppp[*].egressTCType "\"\""
+param Using80211MAC.host[*].ppp[*].ingressTCType "\"\""
+param Using80211MAC.host[*].ppp[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param Using80211MAC.host[*].ppp[*].numInputHooks 0
+param Using80211MAC.host[*].ppp[*].numOutputHooks 0
+param Using80211MAC.host[*].ppp[*].ppp.interfaceTableModule absPath(interfaceTableModule)
+param Using80211MAC.host[*].ppp[*].ppp.mtu 4470B
+param Using80211MAC.host[*].ppp[*].queue.frameCapacity 100
+param Using80211MAC.host[*].ppp[*].queue.queueName "\"l2queue\""
+param Using80211MAC.host[*].ppp[*].queueType "\"DropTailQueue\""
+param Using80211MAC.host[*].routingTable.interfaceTableModule "absPath(\".interfaceTable\")"
+param Using80211MAC.host[*].routingTable.netmaskRoutes "\"*\""
+param Using80211MAC.host[*].routingTable.routerId "\"auto\""
+param Using80211MAC.host[*].routingTable.routingFile "\"\""
+param Using80211MAC.host[*].routingTable.useAdminDist false
+param Using80211MAC.host[*].routingTableType "\"IPv4RoutingTable\""
+param Using80211MAC.host[*].sctpType "firstAvailableOrEmpty(\"SCTP\")"
+param Using80211MAC.host[*].status.initialStatus "\"UP\""
+param Using80211MAC.host[*].tcpType "firstAvailableOrEmpty(\"TCP\", \"TCP_lwIP\", \"TCP_NSC\")"
+param Using80211MAC.host[*].tun[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param Using80211MAC.host[*].tun[*].mtu 1500B
+param Using80211MAC.host[*].udpType "firstAvailableOrEmpty(\"UDP\")"
+param Using80211MAC.host[*].wlan[*]._agentNeeded "(mgmtType == \"Ieee80211MgmtSTA\")"
+param Using80211MAC.host[*].wlan[*].agent.activeScan true
+param Using80211MAC.host[*].wlan[*].agent.associationTimeout 5s
+param Using80211MAC.host[*].wlan[*].agent.authenticationTimeout 5s
+param Using80211MAC.host[*].wlan[*].agent.channelsToScan "\"\""
+param Using80211MAC.host[*].wlan[*].agent.default_ssid "\"SSID\""
+param Using80211MAC.host[*].wlan[*].agent.interfaceTableModule absPath(interfaceTableModule)
+param Using80211MAC.host[*].wlan[*].agent.maxChannelTime 300ms
+param Using80211MAC.host[*].wlan[*].agent.minChannelTime 150ms
+param Using80211MAC.host[*].wlan[*].agent.probeDelay 100ms
+param Using80211MAC.host[*].wlan[*].agent.startingTime -1s
+param Using80211MAC.host[*].wlan[*].bitrate 6Mbps
+param Using80211MAC.host[*].wlan[*].classifierType "\"\""
+param Using80211MAC.host[*].wlan[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param Using80211MAC.host[*].wlan[*].mac.address "\"auto\""
+param Using80211MAC.host[*].wlan[*].mac.AIFSN 2
+param Using80211MAC.host[*].wlan[*].mac.AIFSN0 7
+param Using80211MAC.host[*].wlan[*].mac.AIFSN1 3
+param Using80211MAC.host[*].wlan[*].mac.AIFSN2 2
+param Using80211MAC.host[*].wlan[*].mac.AIFSN3 2
+param Using80211MAC.host[*].wlan[*].mac.basicBitrate 2Mbps
+param Using80211MAC.host[*].wlan[*].mac.bitrate bitrate
+param Using80211MAC.host[*].wlan[*].mac.controlBitrate 2Mbps
+param Using80211MAC.host[*].wlan[*].mac.cwMaxData -1
+param Using80211MAC.host[*].wlan[*].mac.cwMinData -1
+param Using80211MAC.host[*].wlan[*].mac.dataBitrate 54Mbps
+param Using80211MAC.host[*].wlan[*].mac.dcf.channelAccess.contention.backoffOptimization true
+param Using80211MAC.host[*].wlan[*].mac.dcf.channelAccess.contention.initialChannelBusy true
+param Using80211MAC.host[*].wlan[*].mac.dcf.channelAccess.difsTime -1s
+param Using80211MAC.host[*].wlan[*].mac.dcf.channelAccess.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.ctsPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.originatorAckPolicy.ackTimeout -1s
+param Using80211MAC.host[*].wlan[*].mac.dcf.originatorAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.originatorMacDataService.fragmentationPolicy.fragmentationThreshold 1500B
+param Using80211MAC.host[*].wlan[*].mac.dcf.originatorMacDataService.fragmentationPolicyModuleType "\"BasicFragmentationPolicy\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.originatorProtectionMechanism.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.prioritizeMulticast false
+param Using80211MAC.host[*].wlan[*].mac.dcf.rateSelection.rateControlModule "\"^.rateControl\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.rateSelection.responseCtsFrameBitrate -1bps
+param Using80211MAC.host[*].wlan[*].mac.dcf.recipientAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.recoveryProcedure.cwCalculatorModule "\"^.channelAccess\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.recoveryProcedure.longRetryLimit 4
+param Using80211MAC.host[*].wlan[*].mac.dcf.recoveryProcedure.rtsPolicyModule "\"^.rtsPolicy\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.recoveryProcedure.shortRetryLimit 7
+param Using80211MAC.host[*].wlan[*].mac.dcf.rtsPolicy.ctsTimeout -1s
+param Using80211MAC.host[*].wlan[*].mac.dcf.rtsPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.rxModule "\"^.rx\""
+param Using80211MAC.host[*].wlan[*].mac.dcf.txModule "\"^.tx\""
+param Using80211MAC.host[*].wlan[*].mac.EDCA false
+param Using80211MAC.host[*].wlan[*].mac.hcf.ctsPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_BE\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_BK\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_VI\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_VO\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].aifsn -1
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].collisionControllerModule "\"^.collisionController\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].contention.backoffOptimization true
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].contention.initialChannelBusy true
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].cwMax -1
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.edcaf[*].cwMin -1
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.numEdcafs numEdcafs
+param Using80211MAC.host[*].wlan[*].mac.hcf.edca.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].cwCalculatorModule "\"^.edca.edcaf[\" + string(index) + \"]\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].longRetryLimit 4
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].rtsPolicyModule "\"^.rtsPolicy\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].shortRetryLimit 7
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.cwCalculatorModule "\"^.edca.edcaf[1]\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.longRetryLimit 4
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.rtsPolicyModule "\"^.rtsPolicy\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.shortRetryLimit 7
+param Using80211MAC.host[*].wlan[*].mac.hcf.edcaTxopProcedures[*].txopLimit -1s
+param Using80211MAC.host[*].wlan[*].mac.hcf.isBlockAckSupported false
+param Using80211MAC.host[*].wlan[*].mac.hcf.numEdcafs 4
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorAckPolicy.ackTimeout -1s
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorAckPolicy.blockAckReqTreshold 5
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorAckPolicy.blockAckTimeout -1s
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorAckPolicy.maxBlockAckPolicyFrameLength 1000B
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.aMsduSupported true
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.blockAckTimeoutValue 0s
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.delayedAckPolicySupported false
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.maximumAllowedBufferSize 64
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.originatorAckPolicyModule "\"^.originatorAckPolicy\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorMacDataService.aMsduAggregationPolicyType "\"BasicMsduAggregationPolicy\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorMacDataService.fragmentationPolicy.fragmentationThreshold 1500B
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorMacDataService.fragmentationPolicyType "\"BasicFragmentationPolicy\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.aggregationLengthThreshold -1
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.maxAMsduSize 4065
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.qOsCheck true
+param Using80211MAC.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.subframeNumThreshold -1
+param Using80211MAC.host[*].wlan[*].mac.hcf.prioritizeMulticast false
+param Using80211MAC.host[*].wlan[*].mac.hcf.rateSelection.rateControlModule "\"^.rateControl\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.rateSelection.responseBlockAckFrameBitrate -1bps
+param Using80211MAC.host[*].wlan[*].mac.hcf.rateSelection.responseCtsFrameBitrate -1bps
+param Using80211MAC.host[*].wlan[*].mac.hcf.recipientAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.aMsduSupported true
+param Using80211MAC.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.blockAckTimeoutValue 0s
+param Using80211MAC.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.delayedAckPolicySupported false
+param Using80211MAC.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.maximumAllowedBufferSize 64
+param Using80211MAC.host[*].wlan[*].mac.hcf.rtsPolicy.ctsTimeout -1s
+param Using80211MAC.host[*].wlan[*].mac.hcf.rtsPolicy.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.rtsPolicy.rtsThreshold 2346B
+param Using80211MAC.host[*].wlan[*].mac.hcf.rxModule "\"^.rx\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.singleProtectionMechanism.rateSelectionModule "\"^.rateSelection\""
+param Using80211MAC.host[*].wlan[*].mac.hcf.txModule "\"^.tx\""
+param Using80211MAC.host[*].wlan[*].mac.initialRateControlRate -1bps
+param Using80211MAC.host[*].wlan[*].mac.maxQueueSize 14
+param Using80211MAC.host[*].wlan[*].mac.modeSet opMode
+param Using80211MAC.host[*].wlan[*].mac.mtu 2304B
+param Using80211MAC.host[*].wlan[*].mac.multicastBitrate 2Mbps
+param Using80211MAC.host[*].wlan[*].mac.opMode opMode
+param Using80211MAC.host[*].wlan[*].mac.prioritizeMulticast false
+param Using80211MAC.host[*].wlan[*].mac.qosStation false
+param Using80211MAC.host[*].wlan[*].mac.rateControlType "\"\""
+param Using80211MAC.host[*].wlan[*].mac.retryLimit -1
+param Using80211MAC.host[*].wlan[*].mac.rtsThresholdBytes 100B
+param Using80211MAC.host[*].wlan[*].mac.rx.statisticsModule "\"\""
+param Using80211MAC.host[*].wlan[*].mac.slotTime -1s
+param Using80211MAC.host[*].wlan[*].mac.tx.rxModule "\"^.rx\""
+param Using80211MAC.host[*].wlan[*].mac.tx.statisticsModule "\"\""
+param Using80211MAC.host[*].wlan[*].mac.TXOP0 0s
+param Using80211MAC.host[*].wlan[*].mac.TXOP1 0s
+param Using80211MAC.host[*].wlan[*].mac.TXOP2 3.008ms
+param Using80211MAC.host[*].wlan[*].mac.TXOP3 1.504ms
+param Using80211MAC.host[*].wlan[*].macType "\"Ieee80211CompatibleMac\""
+param Using80211MAC.host[*].wlan[*].mgmt.macModule "\"^.mac\""
+param Using80211MAC.host[*].wlan[*].mgmtType "\"Ieee80211MgmtAdhoc\""
+param Using80211MAC.host[*].wlan[*].opMode "\"g(mixed)\""
+param Using80211MAC.host[*].wlan[*].radio.antenna.mobilityModule "\".mobility\""
+param Using80211MAC.host[*].wlan[*].radio.antenna.numAntennas 1
+param Using80211MAC.host[*].wlan[*].radio.antennaType "\"IsotropicAntenna\""
+param Using80211MAC.host[*].wlan[*].radio.bandName "\"2.4 GHz\""
+param Using80211MAC.host[*].wlan[*].radio.bandwidth 2MHz
+param Using80211MAC.host[*].wlan[*].radio.carrierFrequency 2.412GHz
+param Using80211MAC.host[*].wlan[*].radio.channelNumber 0
+param Using80211MAC.host[*].wlan[*].radio.displayCommunicationRange false
+param Using80211MAC.host[*].wlan[*].radio.displayInterferenceRange false
+param Using80211MAC.host[*].wlan[*].radio.energyConsumerType "\"StateBasedEpEnergyConsumer\""
+param Using80211MAC.host[*].wlan[*].radio.radioMediumModule "\"radioMedium\""
+param Using80211MAC.host[*].wlan[*].radio.receiver.energyDetection -85dBm
+param Using80211MAC.host[*].wlan[*].radio.receiver.errorModelType "\"Ieee80211NistErrorModel\""
+param Using80211MAC.host[*].wlan[*].radio.receiver.modulation "\"BPSK\""
+param Using80211MAC.host[*].wlan[*].radio.receiver.sensitivity -85dBm
+param Using80211MAC.host[*].wlan[*].radio.receiver.snirThreshold 4dB
+param Using80211MAC.host[*].wlan[*].radio.receiverType "\"Ieee80211ScalarReceiver\""
+param Using80211MAC.host[*].wlan[*].radio.separateReceptionParts false
+param Using80211MAC.host[*].wlan[*].radio.separateTransmissionParts false
+param Using80211MAC.host[*].wlan[*].radio.switchingTimes "\"ms 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\""
+param Using80211MAC.host[*].wlan[*].radio.transmitter.headerBitLength 192b
+param Using80211MAC.host[*].wlan[*].radio.transmitter.modulation "\"BPSK\""
+param Using80211MAC.host[*].wlan[*].radio.transmitter.power 20mW
+param Using80211MAC.host[*].wlan[*].radio.transmitter.preambleDuration 0s/0
+param Using80211MAC.host[*].wlan[*].radio.transmitterType "\"Ieee80211ScalarTransmitter\""
+param Using80211MAC.host[*].wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Using80211MAC.host[*].wlan[*].typename "\"Ieee80211Nic\""
+param Using80211MAC.host[0].udpApp[*].localPort 5000
+param Using80211MAC.host[0].udpApp[*].typename "\"UDPSink\""
+param Using80211MAC.host[1].udpApp[*].destAddresses "\"host[0]\""
+param Using80211MAC.host[1].udpApp[*].destPort 5000
+param Using80211MAC.host[1].udpApp[*].messageLength 1000B
+param Using80211MAC.host[1].udpApp[*].packetName "\"UDPData\""
+param Using80211MAC.host[1].udpApp[*].sendInterval exponential(10ms)
+param Using80211MAC.host[1].udpApp[*].typename "\"UDPBasicApp\""
+param Using80211MAC.host[2].udpApp[*].localPort 5000
+param Using80211MAC.host[2].udpApp[*].typename "\"UDPSink\""
+param Using80211MAC.host[3].udpApp[*].destAddresses "\"host[2]\""
+param Using80211MAC.host[3].udpApp[*].destPort 5000
+param Using80211MAC.host[3].udpApp[*].messageLength 1000B
+param Using80211MAC.host[3].udpApp[*].packetName "\"UDPData\""
+param Using80211MAC.host[3].udpApp[*].sendInterval exponential(10ms)
+param Using80211MAC.host[3].udpApp[*].typename "\"UDPBasicApp\""
+param Using80211MAC.numHosts 4
+param Using80211MAC.radioMedium.analogModelType "\"ScalarAnalogModel\""
+param Using80211MAC.radioMedium.backgroundNoise.power -110dBm
+param Using80211MAC.radioMedium.backgroundNoiseType "\"IsotropicScalarBackgroundNoise\""
+param Using80211MAC.radioMedium.communicationCacheType "\"VectorCommunicationCache\""
+param Using80211MAC.radioMedium.listeningFilter false
+param Using80211MAC.radioMedium.macAddressFilter false
+param Using80211MAC.radioMedium.mediumLimitCache.carrierFrequency 2.4GHz
+param Using80211MAC.radioMedium.mediumLimitCache.maxAntennaGain 0dB
+param Using80211MAC.radioMedium.mediumLimitCache.maxCommunicationRange 0m/0
+param Using80211MAC.radioMedium.mediumLimitCache.maxInterferenceRange 0m/0
+param Using80211MAC.radioMedium.mediumLimitCache.maxSpeed 0mps/0
+param Using80211MAC.radioMedium.mediumLimitCache.maxTransmissionDuration 10ms
+param Using80211MAC.radioMedium.mediumLimitCache.maxTransmissionPower 0W/0
+param Using80211MAC.radioMedium.mediumLimitCache.minInterferencePower -110dBm
+param Using80211MAC.radioMedium.mediumLimitCache.minInterferenceTime 1ps
+param Using80211MAC.radioMedium.mediumLimitCache.minReceptionPower -85dBm
+param Using80211MAC.radioMedium.mediumLimitCacheType "\"MediumLimitCache\""
+param Using80211MAC.radioMedium.neighborCacheType "\"\""
+param Using80211MAC.radioMedium.obstacleLossType "\"\""
+param Using80211MAC.radioMedium.pathLoss.alpha 2
+param Using80211MAC.radioMedium.pathLoss.systemLoss 0dB
+param Using80211MAC.radioMedium.pathLossType "\"RayleighFading\""
+param Using80211MAC.radioMedium.physicalEnvironmentModule "\"physicalEnvironment\""
+param Using80211MAC.radioMedium.propagation.ignoreMovementDuringPropagation true
+param Using80211MAC.radioMedium.propagation.ignoreMovementDuringReception true
+param Using80211MAC.radioMedium.propagation.ignoreMovementDuringTransmission true
+param Using80211MAC.radioMedium.propagation.propagationSpeed 299792458mps
+param Using80211MAC.radioMedium.propagationType "\"ConstantSpeedPropagation\""
+param Using80211MAC.radioMedium.radioModeFilter false
+param Using80211MAC.radioMedium.rangeFilter "\"\""
+param Using80211MAC.radioMedium.recordCommunicationLog false
+param Using80211MAC.radioMediumType "\"Ieee80211ScalarRadioMedium\""
+param Using80211MAC.visualizer.dataLinkVisualizer.displayLinks false
+param Using80211MAC.visualizer.dataLinkVisualizer.fadeOutAnimationSpeed 0
+param Using80211MAC.visualizer.dataLinkVisualizer.fadeOutMode "\"realTime\""
+param Using80211MAC.visualizer.dataLinkVisualizer.fadeOutTime 1s
+param Using80211MAC.visualizer.dataLinkVisualizer.interfaceFilter "\"*\""
+param Using80211MAC.visualizer.dataLinkVisualizer.labelColor "\"darkcyan\""
+param Using80211MAC.visualizer.dataLinkVisualizer.labelFont "\"<default>, 8px\""
+param Using80211MAC.visualizer.dataLinkVisualizer.labelFormat "\"%n\""
+param Using80211MAC.visualizer.dataLinkVisualizer.lineColor "\"darkcyan\""
+param Using80211MAC.visualizer.dataLinkVisualizer.lineContactMode "\"rectangular\""
+param Using80211MAC.visualizer.dataLinkVisualizer.lineContactSpacing 3
+param Using80211MAC.visualizer.dataLinkVisualizer.lineShift 16
+param Using80211MAC.visualizer.dataLinkVisualizer.lineShiftMode "\"normal\""
+param Using80211MAC.visualizer.dataLinkVisualizer.lineStyle "\"solid\""
+param Using80211MAC.visualizer.dataLinkVisualizer.lineWidth 3
+param Using80211MAC.visualizer.dataLinkVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.dataLinkVisualizer.packetFilter "\"*\""
+param Using80211MAC.visualizer.dataLinkVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.dataLinkVisualizer.tags "\"\""
+param Using80211MAC.visualizer.dataLinkVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.dataLinkVisualizer.zIndex 2
+param Using80211MAC.visualizer.dataLinkVisualizerType "\"DataLinkCanvasVisualizer\""
+param Using80211MAC.visualizer.energyStorageVisualizer.color "\"green\""
+param Using80211MAC.visualizer.energyStorageVisualizer.displayEnergyStorages true
+param Using80211MAC.visualizer.energyStorageVisualizer.energyStorageFilter "\"**\""
+param Using80211MAC.visualizer.energyStorageVisualizer.height 24
+param Using80211MAC.visualizer.energyStorageVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.energyStorageVisualizer.placementHint "\"right\""
+param Using80211MAC.visualizer.energyStorageVisualizer.placementPriority 0
+param Using80211MAC.visualizer.energyStorageVisualizer.spacing 2
+param Using80211MAC.visualizer.energyStorageVisualizer.tags "\"\""
+param Using80211MAC.visualizer.energyStorageVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.energyStorageVisualizer.width 8
+param Using80211MAC.visualizer.energyStorageVisualizer.zIndex 10
+param Using80211MAC.visualizer.energyStorageVisualizerType "\"EnergyStorageCanvasVisualizer\""
+param Using80211MAC.visualizer.ieee80211Visualizer.displayAssociations false
+param Using80211MAC.visualizer.ieee80211Visualizer.icon "\"misc/signal_s\""
+param Using80211MAC.visualizer.ieee80211Visualizer.iconColor "\"dark\""
+param Using80211MAC.visualizer.ieee80211Visualizer.interfaceFilter "\"*\""
+param Using80211MAC.visualizer.ieee80211Visualizer.labelColor "\"black\""
+param Using80211MAC.visualizer.ieee80211Visualizer.labelFont "\"<default>\""
+param Using80211MAC.visualizer.ieee80211Visualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.ieee80211Visualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.ieee80211Visualizer.placementHint "\"top\""
+param Using80211MAC.visualizer.ieee80211Visualizer.placementPriority 0
+param Using80211MAC.visualizer.ieee80211Visualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.ieee80211Visualizer.tags "\"\""
+param Using80211MAC.visualizer.ieee80211Visualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.ieee80211Visualizer.zIndex 2
+param Using80211MAC.visualizer.ieee80211VisualizerType "\"Ieee80211CanvasVisualizer\""
+param Using80211MAC.visualizer.infoVisualizer.backgroundColor "\"white\""
+param Using80211MAC.visualizer.infoVisualizer.displayInfos true
+param Using80211MAC.visualizer.infoVisualizer.font "\"<default>\""
+param Using80211MAC.visualizer.infoVisualizer.format "\"%s\""
+param Using80211MAC.visualizer.infoVisualizer.modules "\"\""
+param Using80211MAC.visualizer.infoVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.infoVisualizer.opacity 1.0
+param Using80211MAC.visualizer.infoVisualizer.placementHint "\"top\""
+param Using80211MAC.visualizer.infoVisualizer.placementPriority 0
+param Using80211MAC.visualizer.infoVisualizer.tags "\"\""
+param Using80211MAC.visualizer.infoVisualizer.textColor "\"black\""
+param Using80211MAC.visualizer.infoVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.infoVisualizer.zIndex 10
+param Using80211MAC.visualizer.infoVisualizerType "\"InfoCanvasVisualizer\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.backgroundColor "\"white\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.displayBackground false
+param Using80211MAC.visualizer.interfaceTableVisualizer.displayInterfaceTables false
+param Using80211MAC.visualizer.interfaceTableVisualizer.displayWiredInterfacesAtConnections true
+param Using80211MAC.visualizer.interfaceTableVisualizer.font "\"<default>\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.format "\"%N %\\\\%a/%l\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.interfaceFilter "\"not(lo*)\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.opacity 1.0
+param Using80211MAC.visualizer.interfaceTableVisualizer.placementHint "\"top\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.placementPriority 0
+param Using80211MAC.visualizer.interfaceTableVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.tags "\"\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.textColor "\"#005030\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.interfaceTableVisualizer.zIndex 10
+param Using80211MAC.visualizer.interfaceTableVisualizerType "\"InterfaceTableCanvasVisualizer\""
+param Using80211MAC.visualizer.linkBreakVisualizer.displayLinkBreaks false
+param Using80211MAC.visualizer.linkBreakVisualizer.fadeOutAnimationSpeed 0
+param Using80211MAC.visualizer.linkBreakVisualizer.fadeOutMode "\"realTime\""
+param Using80211MAC.visualizer.linkBreakVisualizer.fadeOutTime 1s
+param Using80211MAC.visualizer.linkBreakVisualizer.icon "\"status/stop\""
+param Using80211MAC.visualizer.linkBreakVisualizer.iconTintAmount 0
+param Using80211MAC.visualizer.linkBreakVisualizer.iconTintColor "\"\""
+param Using80211MAC.visualizer.linkBreakVisualizer.interfaceFilter "\"*\""
+param Using80211MAC.visualizer.linkBreakVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.linkBreakVisualizer.packetFilter "\"*\""
+param Using80211MAC.visualizer.linkBreakVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.linkBreakVisualizer.tags "\"\""
+param Using80211MAC.visualizer.linkBreakVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.linkBreakVisualizer.zIndex 2
+param Using80211MAC.visualizer.linkBreakVisualizerType "\"LinkBreakCanvasVisualizer\""
+param Using80211MAC.visualizer.mediumVisualizer.communicationRangeLineColor "\"blue\""
+param Using80211MAC.visualizer.mediumVisualizer.communicationRangeLineStyle "\"solid\""
+param Using80211MAC.visualizer.mediumVisualizer.communicationRangeLineWidth 1
+param Using80211MAC.visualizer.mediumVisualizer.displayCommunicationHeat false
+param Using80211MAC.visualizer.mediumVisualizer.displayCommunicationRanges false
+param Using80211MAC.visualizer.mediumVisualizer.displayInterferenceRanges false
+param Using80211MAC.visualizer.mediumVisualizer.displayReceptions false
+param Using80211MAC.visualizer.mediumVisualizer.displaySignals false
+param Using80211MAC.visualizer.mediumVisualizer.displayTransmissions false
+param Using80211MAC.visualizer.mediumVisualizer.interfaceFilter "\"*\""
+param Using80211MAC.visualizer.mediumVisualizer.interferenceRangeLineColor "\"gray\""
+param Using80211MAC.visualizer.mediumVisualizer.interferenceRangeLineStyle "\"solid\""
+param Using80211MAC.visualizer.mediumVisualizer.interferenceRangeLineWidth 1
+param Using80211MAC.visualizer.mediumVisualizer.mediumModule "\"radioMedium\""
+param Using80211MAC.visualizer.mediumVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.mediumVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.mediumVisualizer.packetFilter "\"*\""
+param Using80211MAC.visualizer.mediumVisualizer.receptionImage "\"misc/reception.png\""
+param Using80211MAC.visualizer.mediumVisualizer.receptionPlacementHint "\"topCenter\""
+param Using80211MAC.visualizer.mediumVisualizer.receptionPlacementPriority -1
+param Using80211MAC.visualizer.mediumVisualizer.signalAnimationSpeedChangeTime 1s
+param Using80211MAC.visualizer.mediumVisualizer.signalColor "\"dark\""
+param Using80211MAC.visualizer.mediumVisualizer.signalFadingDistance 50m
+param Using80211MAC.visualizer.mediumVisualizer.signalFadingFactor 1.2
+param Using80211MAC.visualizer.mediumVisualizer.signalOpacity 0.5
+param Using80211MAC.visualizer.mediumVisualizer.signalPropagationAdditionalTime 0s
+param Using80211MAC.visualizer.mediumVisualizer.signalPropagationAnimationSpeed 0/0
+param Using80211MAC.visualizer.mediumVisualizer.signalPropagationAnimationTime 1s
+param Using80211MAC.visualizer.mediumVisualizer.signalRingCount 20
+param Using80211MAC.visualizer.mediumVisualizer.signalRingSize 50m
+param Using80211MAC.visualizer.mediumVisualizer.signalShape "\"ring\""
+param Using80211MAC.visualizer.mediumVisualizer.signalTransmissionAnimationSpeed 0/0
+param Using80211MAC.visualizer.mediumVisualizer.signalTransmissionAnimationTime 1s
+param Using80211MAC.visualizer.mediumVisualizer.signalWaveCount 20
+param Using80211MAC.visualizer.mediumVisualizer.signalWaveFadingAnimationSpeedFactor 1
+param Using80211MAC.visualizer.mediumVisualizer.signalWaveLength 50m
+param Using80211MAC.visualizer.mediumVisualizer.signalWaveWidth 10m
+param Using80211MAC.visualizer.mediumVisualizer.tags "\"\""
+param Using80211MAC.visualizer.mediumVisualizer.transmissionImage "\"misc/transmission.png\""
+param Using80211MAC.visualizer.mediumVisualizer.transmissionPlacementHint "\"topCenter\""
+param Using80211MAC.visualizer.mediumVisualizer.transmissionPlacementPriority 1
+param Using80211MAC.visualizer.mediumVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.mediumVisualizer.zIndex 0
+param Using80211MAC.visualizer.mediumVisualizerType "\"MediumCanvasVisualizer\""
+param Using80211MAC.visualizer.mobilityVisualizer.animationSpeed 0
+param Using80211MAC.visualizer.mobilityVisualizer.displayMovements true
+param Using80211MAC.visualizer.mobilityVisualizer.displayMovementTrails false
+param Using80211MAC.visualizer.mobilityVisualizer.displayOrientations false
+param Using80211MAC.visualizer.mobilityVisualizer.displayVelocities false
+param Using80211MAC.visualizer.mobilityVisualizer.moduleFilter "\"**\""
+param Using80211MAC.visualizer.mobilityVisualizer.movementTrailLineColor "\"dark\""
+param Using80211MAC.visualizer.mobilityVisualizer.movementTrailLineStyle "\"solid\""
+param Using80211MAC.visualizer.mobilityVisualizer.movementTrailLineWidth 1
+param Using80211MAC.visualizer.mobilityVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.mobilityVisualizer.orientationArcSize 0.25
+param Using80211MAC.visualizer.mobilityVisualizer.orientationLineColor "\"black\""
+param Using80211MAC.visualizer.mobilityVisualizer.orientationLineStyle "\"solid\""
+param Using80211MAC.visualizer.mobilityVisualizer.orientationLineWidth 1
+param Using80211MAC.visualizer.mobilityVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.mobilityVisualizer.tags "\"\""
+param Using80211MAC.visualizer.mobilityVisualizer.trailLength 100
+param Using80211MAC.visualizer.mobilityVisualizer.velocityArrowScale 1
+param Using80211MAC.visualizer.mobilityVisualizer.velocityLineColor "\"black\""
+param Using80211MAC.visualizer.mobilityVisualizer.velocityLineStyle "\"solid\""
+param Using80211MAC.visualizer.mobilityVisualizer.velocityLineWidth 1
+param Using80211MAC.visualizer.mobilityVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.mobilityVisualizer.zIndex 0
+param Using80211MAC.visualizer.mobilityVisualizerType "\"MobilityCanvasVisualizer\""
+param Using80211MAC.visualizer.networkConnectionVisualizer.displayNetworkConnections true
+param Using80211MAC.visualizer.networkConnectionVisualizer.lineColor "\"black\""
+param Using80211MAC.visualizer.networkConnectionVisualizer.lineStyle "\"solid\""
+param Using80211MAC.visualizer.networkConnectionVisualizer.lineWidth 1
+param Using80211MAC.visualizer.networkConnectionVisualizer.nodeFilter "\"\""
+param Using80211MAC.visualizer.networkConnectionVisualizer.tags "\"\""
+param Using80211MAC.visualizer.networkConnectionVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.networkConnectionVisualizer.zIndex 0
+param Using80211MAC.visualizer.networkConnectionVisualizerType "\"NetworkConnectionCanvasVisualizer\""
+param Using80211MAC.visualizer.networkNodeVisualizer.annotationSpacing 4
+param Using80211MAC.visualizer.networkNodeVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.networkNodeVisualizer.placementPenalty 10
+param Using80211MAC.visualizer.networkNodeVisualizer.tags "\"\""
+param Using80211MAC.visualizer.networkNodeVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.networkNodeVisualizer.zIndex 0
+param Using80211MAC.visualizer.networkNodeVisualizerType "\"NetworkNodeCanvasVisualizer\""
+param Using80211MAC.visualizer.networkRouteVisualizer.displayRoutes false
+param Using80211MAC.visualizer.networkRouteVisualizer.fadeOutAnimationSpeed 0
+param Using80211MAC.visualizer.networkRouteVisualizer.fadeOutMode "\"realTime\""
+param Using80211MAC.visualizer.networkRouteVisualizer.fadeOutTime 1s
+param Using80211MAC.visualizer.networkRouteVisualizer.labelColor "\"\""
+param Using80211MAC.visualizer.networkRouteVisualizer.labelFont "\"<default>, 8px\""
+param Using80211MAC.visualizer.networkRouteVisualizer.labelFormat "\"%n\""
+param Using80211MAC.visualizer.networkRouteVisualizer.lineColor "\"dark\""
+param Using80211MAC.visualizer.networkRouteVisualizer.lineContactMode "\"rectangular\""
+param Using80211MAC.visualizer.networkRouteVisualizer.lineContactSpacing 3
+param Using80211MAC.visualizer.networkRouteVisualizer.lineShift 16
+param Using80211MAC.visualizer.networkRouteVisualizer.lineShiftMode "\"normal\""
+param Using80211MAC.visualizer.networkRouteVisualizer.lineSmooth false
+param Using80211MAC.visualizer.networkRouteVisualizer.lineStyle "\"solid\""
+param Using80211MAC.visualizer.networkRouteVisualizer.lineWidth 3
+param Using80211MAC.visualizer.networkRouteVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.networkRouteVisualizer.packetFilter "\"*\""
+param Using80211MAC.visualizer.networkRouteVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.networkRouteVisualizer.tags "\"\""
+param Using80211MAC.visualizer.networkRouteVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.networkRouteVisualizer.zIndex 3
+param Using80211MAC.visualizer.networkRouteVisualizerType "\"NetworkRouteCanvasVisualizer\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.displayFaceNormalVectors false
+param Using80211MAC.visualizer.obstacleLossVisualizer.displayIntersections false
+param Using80211MAC.visualizer.obstacleLossVisualizer.faceNormalLineColor "\"grey\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.faceNormalLineStyle "\"solid\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.faceNormalLineWidth 1
+param Using80211MAC.visualizer.obstacleLossVisualizer.fadeOutAnimationSpeed 0
+param Using80211MAC.visualizer.obstacleLossVisualizer.fadeOutMode "\"realTime\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.fadeOutTime 1s
+param Using80211MAC.visualizer.obstacleLossVisualizer.intersectionLineColor "\"red\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.intersectionLineStyle "\"solid\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.intersectionLineWidth 1
+param Using80211MAC.visualizer.obstacleLossVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.tags "\"\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.obstacleLossVisualizer.zIndex 0
+param Using80211MAC.visualizer.obstacleLossVisualizerType "\"TracingObstacleLossCanvasVisualizer\""
+param Using80211MAC.visualizer.packetDropVisualizer.displayPacketDrops false
+param Using80211MAC.visualizer.packetDropVisualizer.fadeOutAnimationSpeed 0
+param Using80211MAC.visualizer.packetDropVisualizer.fadeOutMode "\"realTime\""
+param Using80211MAC.visualizer.packetDropVisualizer.fadeOutTime 1s
+param Using80211MAC.visualizer.packetDropVisualizer.icon "\"msg/packet_s\""
+param Using80211MAC.visualizer.packetDropVisualizer.iconTintAmount 0
+param Using80211MAC.visualizer.packetDropVisualizer.iconTintColor "\"\""
+param Using80211MAC.visualizer.packetDropVisualizer.interfaceFilter "\"*\""
+param Using80211MAC.visualizer.packetDropVisualizer.labelColor "\"black\""
+param Using80211MAC.visualizer.packetDropVisualizer.labelFont "\"<default>\""
+param Using80211MAC.visualizer.packetDropVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.packetDropVisualizer.packetFilter "\"*\""
+param Using80211MAC.visualizer.packetDropVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.packetDropVisualizer.tags "\"\""
+param Using80211MAC.visualizer.packetDropVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.packetDropVisualizer.zIndex 10
+param Using80211MAC.visualizer.packetDropVisualizerType "\"PacketDropCanvasVisualizer\""
+param Using80211MAC.visualizer.physicalEnvironmentVisualizer.displayObjects true
+param Using80211MAC.visualizer.physicalEnvironmentVisualizer.physicalEnvironmentModule "\"physicalEnvironment\""
+param Using80211MAC.visualizer.physicalEnvironmentVisualizer.tags "\"\""
+param Using80211MAC.visualizer.physicalEnvironmentVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.physicalEnvironmentVisualizer.zIndex 0
+param Using80211MAC.visualizer.physicalEnvironmentVisualizerType "\"PhysicalEnvironmentCanvasVisualizer\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.displayLinks false
+param Using80211MAC.visualizer.physicalLinkVisualizer.fadeOutAnimationSpeed 0
+param Using80211MAC.visualizer.physicalLinkVisualizer.fadeOutMode "\"realTime\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.fadeOutTime 1s
+param Using80211MAC.visualizer.physicalLinkVisualizer.interfaceFilter "\"*\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.labelColor "\"olive\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.labelFont "\"<default>, 8px\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.labelFormat "\"%n\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.lineColor "\"olive\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.lineContactMode "\"rectangular\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.lineContactSpacing 3
+param Using80211MAC.visualizer.physicalLinkVisualizer.lineShift 16
+param Using80211MAC.visualizer.physicalLinkVisualizer.lineShiftMode "\"normal\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.lineStyle "\"dotted\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.lineWidth 3
+param Using80211MAC.visualizer.physicalLinkVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.packetFilter "\"*\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.tags "\"\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.physicalLinkVisualizer.zIndex 1
+param Using80211MAC.visualizer.physicalLinkVisualizerType "\"PhysicalLinkCanvasVisualizer\""
+param Using80211MAC.visualizer.queueVisualizer.color "\"blue\""
+param Using80211MAC.visualizer.queueVisualizer.displayQueues false
+param Using80211MAC.visualizer.queueVisualizer.height 24
+param Using80211MAC.visualizer.queueVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.queueVisualizer.placementHint "\"right\""
+param Using80211MAC.visualizer.queueVisualizer.placementPriority 0
+param Using80211MAC.visualizer.queueVisualizer.queueFilter "\"**\""
+param Using80211MAC.visualizer.queueVisualizer.spacing 2
+param Using80211MAC.visualizer.queueVisualizer.tags "\"\""
+param Using80211MAC.visualizer.queueVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.queueVisualizer.width 8
+param Using80211MAC.visualizer.queueVisualizer.zIndex 10
+param Using80211MAC.visualizer.queueVisualizerType "\"QueueCanvasVisualizer\""
+param Using80211MAC.visualizer.radioVisualizer.displayRadioMode true
+param Using80211MAC.visualizer.radioVisualizer.displayRadios false
+param Using80211MAC.visualizer.radioVisualizer.displayReceptionState true
+param Using80211MAC.visualizer.radioVisualizer.displayTransmissionState true
+param Using80211MAC.visualizer.radioVisualizer.height 16
+param Using80211MAC.visualizer.radioVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.radioVisualizer.placementHint "\"bottomRight\""
+param Using80211MAC.visualizer.radioVisualizer.placementPriority 0
+param Using80211MAC.visualizer.radioVisualizer.radioFilter "\"**\""
+param Using80211MAC.visualizer.radioVisualizer.radioModeImages "\"block/process_vs block/timer_vs block/wrx_vs block/wtx_vs block/wrxtx_vs block/cogwheel_vs\""
+param Using80211MAC.visualizer.radioVisualizer.receptionStateImages "\"- - misc/reception misc/reception\""
+param Using80211MAC.visualizer.radioVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.radioVisualizer.tags "\"\""
+param Using80211MAC.visualizer.radioVisualizer.transmissionStateImages "\"- - misc/transmission\""
+param Using80211MAC.visualizer.radioVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.radioVisualizer.width 16
+param Using80211MAC.visualizer.radioVisualizer.zIndex 10
+param Using80211MAC.visualizer.radioVisualizerType "\"RadioCanvasVisualizer\""
+param Using80211MAC.visualizer.routingTableVisualizer.destinationFilter "\"*\""
+param Using80211MAC.visualizer.routingTableVisualizer.displayLabels true
+param Using80211MAC.visualizer.routingTableVisualizer.displayRoutesIndividually true
+param Using80211MAC.visualizer.routingTableVisualizer.displayRoutingTables false
+param Using80211MAC.visualizer.routingTableVisualizer.labelColor "\"black\""
+param Using80211MAC.visualizer.routingTableVisualizer.labelFont "\"<default>, 8px\""
+param Using80211MAC.visualizer.routingTableVisualizer.labelFormat "\"%d/%m -> %g (%n)\""
+param Using80211MAC.visualizer.routingTableVisualizer.lineColor "\"black\""
+param Using80211MAC.visualizer.routingTableVisualizer.lineContactMode "\"rectangular\""
+param Using80211MAC.visualizer.routingTableVisualizer.lineContactSpacing 3
+param Using80211MAC.visualizer.routingTableVisualizer.lineShift 16
+param Using80211MAC.visualizer.routingTableVisualizer.lineShiftMode "\"normal\""
+param Using80211MAC.visualizer.routingTableVisualizer.lineStyle "\"solid\""
+param Using80211MAC.visualizer.routingTableVisualizer.lineWidth 2
+param Using80211MAC.visualizer.routingTableVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.routingTableVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.routingTableVisualizer.tags "\"\""
+param Using80211MAC.visualizer.routingTableVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.routingTableVisualizer.zIndex 0
+param Using80211MAC.visualizer.routingTableVisualizerType "\"RoutingTableCanvasVisualizer\""
+param Using80211MAC.visualizer.sceneVisualizer.animationSpeed 0
+param Using80211MAC.visualizer.sceneVisualizer.axisLength 0m/0
+param Using80211MAC.visualizer.sceneVisualizer.descriptionFigure "\"\""
+param Using80211MAC.visualizer.sceneVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.sceneVisualizer.physicalEnvironmentModule "\"physicalEnvironment\""
+param Using80211MAC.visualizer.sceneVisualizer.tags "\"\""
+param Using80211MAC.visualizer.sceneVisualizer.viewAngle "\"z\""
+param Using80211MAC.visualizer.sceneVisualizer.viewScale "\"1 1\""
+param Using80211MAC.visualizer.sceneVisualizer.viewTranslation "\"0 0\""
+param Using80211MAC.visualizer.sceneVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.sceneVisualizer.zIndex 0
+param Using80211MAC.visualizer.sceneVisualizerType "\"SceneCanvasVisualizer\""
+param Using80211MAC.visualizer.statisticVisualizer.backgroundColor "\"white\""
+param Using80211MAC.visualizer.statisticVisualizer.displayStatistics true
+param Using80211MAC.visualizer.statisticVisualizer.font "\"<default>\""
+param Using80211MAC.visualizer.statisticVisualizer.format "\"%n: %v %u\""
+param Using80211MAC.visualizer.statisticVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.statisticVisualizer.opacity 1.0
+param Using80211MAC.visualizer.statisticVisualizer.placementHint "\"top\""
+param Using80211MAC.visualizer.statisticVisualizer.placementPriority 0
+param Using80211MAC.visualizer.statisticVisualizer.signalName "\"\""
+param Using80211MAC.visualizer.statisticVisualizer.sourceFilter "\"**\""
+param Using80211MAC.visualizer.statisticVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.statisticVisualizer.tags "\"\""
+param Using80211MAC.visualizer.statisticVisualizer.textColor "\"black\""
+param Using80211MAC.visualizer.statisticVisualizer.unit "\"\""
+param Using80211MAC.visualizer.statisticVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.statisticVisualizer.zIndex 10
+param Using80211MAC.visualizer.statisticVisualizerType "\"StatisticCanvasVisualizer\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.destinationNodeFilter "\"*\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.destinationPortFilter "\"*\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.displayTransportConnections false
+param Using80211MAC.visualizer.transportConnectionVisualizer.icon "\"misc/marker_s\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.iconColor "\"dark\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.labelColor "\"black\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.labelFont "\"<default>\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.placementHint "\"top\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.placementPriority 0
+param Using80211MAC.visualizer.transportConnectionVisualizer.sourceNodeFilter "\"*\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.sourcePortFilter "\"*\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.tags "\"\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.transportConnectionVisualizer.zIndex 4
+param Using80211MAC.visualizer.transportConnectionVisualizerType "\"TransportConnectionCanvasVisualizer\""
+param Using80211MAC.visualizer.transportRouteVisualizer.displayRoutes false
+param Using80211MAC.visualizer.transportRouteVisualizer.fadeOutAnimationSpeed 0
+param Using80211MAC.visualizer.transportRouteVisualizer.fadeOutMode "\"realTime\""
+param Using80211MAC.visualizer.transportRouteVisualizer.fadeOutTime 1s
+param Using80211MAC.visualizer.transportRouteVisualizer.labelColor "\"\""
+param Using80211MAC.visualizer.transportRouteVisualizer.labelFont "\"<default>, 8px\""
+param Using80211MAC.visualizer.transportRouteVisualizer.labelFormat "\"%n\""
+param Using80211MAC.visualizer.transportRouteVisualizer.lineColor "\"dark\""
+param Using80211MAC.visualizer.transportRouteVisualizer.lineContactMode "\"rectangular\""
+param Using80211MAC.visualizer.transportRouteVisualizer.lineContactSpacing 3
+param Using80211MAC.visualizer.transportRouteVisualizer.lineShift 16
+param Using80211MAC.visualizer.transportRouteVisualizer.lineShiftMode "\"normal\""
+param Using80211MAC.visualizer.transportRouteVisualizer.lineSmooth false
+param Using80211MAC.visualizer.transportRouteVisualizer.lineStyle "\"solid\""
+param Using80211MAC.visualizer.transportRouteVisualizer.lineWidth 3
+param Using80211MAC.visualizer.transportRouteVisualizer.nodeFilter "\"*\""
+param Using80211MAC.visualizer.transportRouteVisualizer.packetFilter "\"*\""
+param Using80211MAC.visualizer.transportRouteVisualizer.subscriptionModule "\"<root>\""
+param Using80211MAC.visualizer.transportRouteVisualizer.tags "\"\""
+param Using80211MAC.visualizer.transportRouteVisualizer.visualizerTargetModule "\"<root>\""
+param Using80211MAC.visualizer.transportRouteVisualizer.zIndex 4
+param Using80211MAC.visualizer.transportRouteVisualizerType "\"TransportRouteCanvasVisualizer\""
+
+vector 0 Using80211MAC.host[0].energyStorage residualEnergyCapacity:vector ETV
+attr interpolationmode linear
+attr source residualEnergyCapacityChanged
+attr title "Residual energy capacity, vector"
+vector 1 Using80211MAC.host[1].energyStorage residualEnergyCapacity:vector ETV
+attr interpolationmode linear
+attr source residualEnergyCapacityChanged
+attr title "Residual energy capacity, vector"
+vector 2 Using80211MAC.host[2].energyStorage residualEnergyCapacity:vector ETV
+attr interpolationmode linear
+attr source residualEnergyCapacityChanged
+attr title "Residual energy capacity, vector"
+vector 3 Using80211MAC.host[3].energyStorage residualEnergyCapacity:vector ETV
+attr interpolationmode linear
+attr source residualEnergyCapacityChanged
+attr title "Residual energy capacity, vector"
+vector 4 Using80211MAC.host[0].energyStorage powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 5 Using80211MAC.host[1].energyStorage powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 6 Using80211MAC.host[2].energyStorage powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 7 Using80211MAC.host[3].energyStorage powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 8 Using80211MAC.host[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 Using80211MAC.host[0].wlan[0].radio.energyConsumer powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 10 Using80211MAC.host[0].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 11 Using80211MAC.host[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 12 Using80211MAC.host[1].wlan[0].radio.energyConsumer powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 13 Using80211MAC.host[1].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 14 Using80211MAC.host[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 Using80211MAC.host[2].wlan[0].radio.energyConsumer powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 16 Using80211MAC.host[2].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 17 Using80211MAC.host[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 18 Using80211MAC.host[3].wlan[0].radio.energyConsumer powerConsumption:vector ETV
+attr interpolationmode sample-hold
+attr source powerConsumptionChanged
+attr title "Power consumption, vector"
+vector 19 Using80211MAC.host[3].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 20 Using80211MAC.host[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 21 Using80211MAC.host[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 22 Using80211MAC.host[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 23 Using80211MAC.host[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 24 Using80211MAC.host[0].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 25 Using80211MAC.host[0].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 26 Using80211MAC.host[0].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 27 Using80211MAC.host[0].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 28 Using80211MAC.host[0].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 29 Using80211MAC.host[1].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 30 Using80211MAC.host[1].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 31 Using80211MAC.host[1].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 32 Using80211MAC.host[1].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 33 Using80211MAC.host[1].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 34 Using80211MAC.host[2].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 35 Using80211MAC.host[2].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 36 Using80211MAC.host[2].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 37 Using80211MAC.host[2].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 38 Using80211MAC.host[2].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 39 Using80211MAC.host[3].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 40 Using80211MAC.host[3].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 41 Using80211MAC.host[3].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 42 Using80211MAC.host[3].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 43 Using80211MAC.host[3].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 44 Using80211MAC.host[1].udpApp[0] sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+vector 45 Using80211MAC.host[1].udp sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+vector 46 Using80211MAC.host[1].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 47 Using80211MAC.host[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 48 Using80211MAC.host[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 49 Using80211MAC.host[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 50 Using80211MAC.host[2].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 51 Using80211MAC.host[3].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 52 Using80211MAC.host[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 53 Using80211MAC.host[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 54 Using80211MAC.host[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 55 Using80211MAC.host[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 56 Using80211MAC.host[0].udp rcvdPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rcvdPk
+attr title "packets received, vector(packetBytes)"
+vector 57 Using80211MAC.host[0].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr title "packets passed up, vector(count)"
+vector 58 Using80211MAC.host[0].udpApp[0] rcvdPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rcvdPk
+attr title "packets received, vector(packetBytes)"
+vector 59 Using80211MAC.host[0].udpApp[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr source messageAge(rcvdPk)
+attr title "end-to-end delay, vector"
+attr unit s
+vector 60 Using80211MAC.host[0].udpApp[0] rcvdPkSeqNo:vector ETV
+attr interpolationmode none
+attr source appPkSeqNo(rcvdPk)
+attr title "received packet sequence number, vector"
+vector 61 Using80211MAC.host[3].udpApp[0] sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+vector 62 Using80211MAC.host[3].udp sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+vector 63 Using80211MAC.host[3].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 64 Using80211MAC.host[3].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 65 Using80211MAC.host[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 66 Using80211MAC.host[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 67 Using80211MAC.host[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 68 Using80211MAC.host[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 69 Using80211MAC.host[2].udp rcvdPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rcvdPk
+attr title "packets received, vector(packetBytes)"
+vector 70 Using80211MAC.host[2].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr title "packets passed up, vector(count)"
+vector 71 Using80211MAC.host[2].udpApp[0] rcvdPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rcvdPk
+attr title "packets received, vector(packetBytes)"
+vector 72 Using80211MAC.host[2].udpApp[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr source messageAge(rcvdPk)
+attr title "end-to-end delay, vector"
+attr unit s
+vector 73 Using80211MAC.host[2].udpApp[0] rcvdPkSeqNo:vector ETV
+attr interpolationmode none
+attr source appPkSeqNo(rcvdPk)
+attr title "received packet sequence number, vector"
+vector 74 Using80211MAC.host[2].udpApp[0] throughput:vector ETV
+attr source throughput(rcvdPk)
+attr title "throughput, vector"
+attr unit bps
+vector 75 Using80211MAC.host[0].udpApp[0] throughput:vector ETV
+attr source throughput(rcvdPk)
+attr title "throughput, vector"
+attr unit bps
+0	68116 143182 0 32256 0 1.99135574377 3478 0.037432667238404 0.04851634272607 149.60619847841 6.4736112983264
+1	211298 143207 0 32256 0 1.99135574377 3474 0.035630986259044 0.04552796546137 141.09989461959 5.7612589493189
+2	354505 143289 0 32256 0 1.99135574377 3479 0.001790350137166 0.012771289624507 25.733739233336 0.22542110099615
+3	497794 142973 0 32256 0 1.99135574377 3472 0.038955496434428 0.048770795922028 152.61461688489 6.7363554011804
+4	640767 261227 0 32256 0 1.99135574377 9316 0 0.1 64.544000000004 4.4049280000001
+5	901994 261540 0 32251 0 1.991321779413 9320 0 0.1 64.636000000004 4.414832
+6	1163534 259889 0 32254 0 1.991355671028 9268 0 0.1 63.776000000004 4.325632
+7	1423423 259929 0 32253 0 1.991355650997 9270 0 0.1 63.858000000004 4.335436
+8	1683352 21792 0 32228 0 1.988104589006 854 0 3 2132 5542
+9	1705144 261218 0 32256 0 1.99135574377 9315 0 0.1 64.544000000004 4.4049280000001
+10	1966362 10 0 0 0 0 1 0 0 0 0
+11	1966372 22736 0 32207 0 1.987846553135 856 0 3 2137 5555
+12	1989108 270850 0 32251 0 1.991321779413 9319 0 0.1 64.636000000004 4.414832
+13	2259958 10 0 0 0 0 1 0 0 0 0
+14	2259968 22204 0 32156 0 1.985780102042 838 0 3 2092 5438
+15	2282172 269147 0 32254 0 1.991355671028 9267 0 0.1 63.776000000004 4.325632
+16	2551319 10 0 0 0 0 1 0 0 0 0
+17	2551329 22268 0 32253 0 1.991355650997 840 0 3 2097 5451
+18	2573597 269189 0 32253 0 1.991355650997 9269 0 0.1 63.858000000004 4.335436
+19	2842786 10 0 0 0 0 1 0 0 0 0
+20	2842796 89688 0 32256 0 1.99135574377 3379 0 3 5479 13057
+21	2932484 89710 0 32251 0 1.991321779413 3378 0 3 5475 13047
+22	3022194 89702 0 32254 0 1.991355671028 3379 0 3 5503 13129
+23	3111896 89627 0 32253 0 1.991355650997 3377 0 3 5496 13110
+24	3201523 89760 0 32256 0 1.99135574377 3382 0 0 0 0
+25	3291283 89760 0 32256 0 1.99135574377 3382 0 0 0 0
+26	3381043 89760 0 32256 0 1.99135574377 3382 0 0 0 0
+27	3470803 89760 0 32256 0 1.99135574377 3382 0 0 0 0
+28	3560563 89760 0 32256 0 1.99135574377 3382 0 0 0 0
+29	3650323 89980 0 32251 0 1.991321779413 3388 0 2 908 1784
+30	3740303 67212 0 32251 0 1.991321779413 2532 0 0 0 0
+31	3807515 67212 0 32251 0 1.991321779413 2532 0 0 0 0
+32	3874727 67212 0 32251 0 1.991321779413 2532 0 0 0 0
+33	3941939 67212 0 32251 0 1.991321779413 2532 0 0 0 0
+34	4009151 89962 0 32254 0 1.991355671028 3390 0 0 0 0
+35	4099113 89962 0 32254 0 1.991355671028 3390 0 0 0 0
+36	4189075 89962 0 32254 0 1.991355671028 3390 0 0 0 0
+37	4279037 89962 0 32254 0 1.991355671028 3390 0 0 0 0
+38	4368999 89962 0 32254 0 1.991355671028 3390 0 0 0 0
+39	4458961 89988 0 32247 0 1.991321650997 3392 0 2 908 1776
+40	4548949 67694 0 32247 0 1.991321650997 2552 0 0 0 0
+41	4616643 67694 0 32247 0 1.991321650997 2552 0 0 0 0
+42	4684337 67694 0 32247 0 1.991321650997 2552 0 0 0 0
+43	4752031 67694 0 32247 0 1.991321650997 2552 0 0 0 0
+44	4819725 6302 19 32165 0.007923759853 1.987572481394 213 1000 1000 213000 213000000
+45	4826027 6302 21 32166 0.007923759853 1.987572481394 213 1008 1008 214704 216421632
+46	4832329 6302 24 32169 0.007923759853 1.987572481394 213 1064 1064 226632 241136448
+47	4838631 12211 27 32200 0.007923759853 1.987660553135 427 20 1064 230912 241222048
+48	4850842 45432 28 32207 0.007923759853 1.987846553135 1708 0 2 1708 2562
+49	4896274 35606 36 32209 0.007957801527 1.987846589006 1262 14 1064 463300 477995240
+50	4931880 35868 38 32255 0.00795782617 1.991355671028 1271 14 1064 462388 476865512
+51	4967748 35380 40 32236 0.007957871009 1.98810468129 1269 14 1064 242700 241387080
+52	5003128 11739 41 32218 0.007967801527 1.987856589006 426 14 14 5964 83496
+53	5014867 45252 42 32228 0.007967801527 1.988104589006 1704 0 2 1704 2556
+54	5060119 35156 51 32230 0.008001843204 1.988104624878 1261 14 1064 237308 235724992
+55	5095275 6295 66 32209 0.008197884883 1.987846589006 213 1064 1064 226632 241136448
+56	5101570 6295 69 32212 0.008197884883 1.987846589006 213 1008 1008 214704 216421632
+57	5107865 5974 69 32212 0.008197884883 1.987846589006 213 1 213 22791 3243919
+58	5113839 6295 70 32213 0.008197884883 1.987846589006 213 1000 1000 213000 213000000
+59	5120134 8401 70 32213 0.008197884883 1.987846589006 213 0.000274105021 0.001686822382 0.084376583799 5.0677940817963e-005
+60	5128535 5972 70 32213 0.008197884883 1.987846589006 213 0 212 22578 3198550
+61	5134507 6146 170 32239 0.019353131106 1.991321650997 208 1000 1000 208000 208000000
+62	5140653 6146 172 32240 0.019353131106 1.991321650997 208 1008 1008 209664 211341312
+63	5146799 6146 175 32243 0.019353131106 1.991321650997 208 1064 1064 221312 235475968
+64	5152945 11961 178 32246 0.019353131106 1.991321650997 419 20 1064 226576 236692064
+65	5164906 44496 179 32253 0.019353131106 1.991355650997 1676 0 2 1676 2514
+66	5209402 11510 192 32146 0.019397197876 1.985532102042 418 14 14 5852 81928
+67	5220912 44368 193 32156 0.019397197876 1.985780102042 1672 0 2 1672 2508
+68	5265280 6111 215 32137 0.019627331422 1.985522102042 207 1064 1064 220248 234343872
+69	5271391 6111 218 32140 0.019627331422 1.985522102042 207 1008 1008 208656 210325248
+70	5277502 5796 218 32140 0.019627331422 1.985522102042 207 1 207 21528 2978040
+71	5283298 6111 219 32141 0.019627331422 1.985522102042 207 1000 1000 207000 207000000
+72	5289409 8152 219 32141 0.019627331422 1.985522102042 207 0.000274039172 0.002574152766 0.078049560763 4.6982059931804e-005
+73	5297561 5794 219 32141 0.019627331422 1.985522102042 207 0 206 21321 2935191
+74	5303355 397 1796 31306 0.1 1.9 19 400000 1760000 16000000 15244800000000
+75	5303752 396 2190 31232 0.1 1.9 19 480000 1280000 16480000 15347200000000
+
