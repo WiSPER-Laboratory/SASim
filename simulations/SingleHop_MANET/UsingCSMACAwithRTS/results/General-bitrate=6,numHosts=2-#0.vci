@@ -1,15 +1,15 @@
-file 134487 1511171546                                          
+file 92644 1511396246                                           
 version 2
-run General-0-20171120-01:51:33-8744
+run General-0-20171122-16:17:02-12140
 attr configname General
-attr datetime 20171120-01:51:33
+attr datetime 20171122-16:17:02
 attr experiment General
 attr inifile omnetpp_Sim1.ini
 attr iterationvars "$bitrate=6, $numHosts=2"
 attr iterationvarsf bitrate=6,numHosts=2-
 attr measurement "$bitrate=6, $numHosts=2"
 attr network UsingCSMACAwithRTS
-attr processid 8744
+attr processid 12140
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -108,15 +108,11 @@ param UsingCSMACAwithRTS.host[*].networkLayer.proxyARP false
 param UsingCSMACAwithRTS.host[*].networkLayerType "\"IPv4NetworkLayer\""
 param UsingCSMACAwithRTS.host[*].numExtInterfaces 0
 param UsingCSMACAwithRTS.host[*].numPcapRecorders 0
-param UsingCSMACAwithRTS.host[0].numPingApps 0
-param UsingCSMACAwithRTS.host[1].numPingApps 1
-param UsingCSMACAwithRTS.host[2].numPingApps 0
-param UsingCSMACAwithRTS.host[3].numPingApps 1
 param UsingCSMACAwithRTS.host[*].numRadios 1
 param UsingCSMACAwithRTS.host[*].numSctpApps 0
 param UsingCSMACAwithRTS.host[*].numTcpApps 0
 param UsingCSMACAwithRTS.host[*].numTunInterfaces 0
-param UsingCSMACAwithRTS.host[*].numUdpApps 0
+param UsingCSMACAwithRTS.host[*].numUdpApps 1
 param UsingCSMACAwithRTS.host[*].osgModel "\"\""
 param UsingCSMACAwithRTS.host[*].osgModelColor "\"\""
 param UsingCSMACAwithRTS.host[*].pcapRecorder[*].alwaysFlush false
@@ -127,18 +123,6 @@ param UsingCSMACAwithRTS.host[*].pcapRecorder[*].receivingSignalNames "\"packetR
 param UsingCSMACAwithRTS.host[*].pcapRecorder[*].sendingSignalNames "\"packetSentToLower\""
 param UsingCSMACAwithRTS.host[*].pcapRecorder[*].snaplen 65535
 param UsingCSMACAwithRTS.host[*].pcapRecorder[*].verbose false
-param UsingCSMACAwithRTS.host[*].pingApp[*].continuous false
-param UsingCSMACAwithRTS.host[*].pingApp[*].count -1
-param UsingCSMACAwithRTS.host[1].pingApp[*].destAddr "\"host[0]\""
-param UsingCSMACAwithRTS.host[3].pingApp[*].destAddr "\"host[2]\""
-param UsingCSMACAwithRTS.host[*].pingApp[*].hopLimit 32
-param UsingCSMACAwithRTS.host[*].pingApp[*].packetSize 56B
-param UsingCSMACAwithRTS.host[*].pingApp[*].printPing true
-param UsingCSMACAwithRTS.host[*].pingApp[*].sendInterval 1s
-param UsingCSMACAwithRTS.host[*].pingApp[*].sleepDuration 0s
-param UsingCSMACAwithRTS.host[*].pingApp[*].srcAddr "\"\""
-param UsingCSMACAwithRTS.host[*].pingApp[*].startTime "uniform(0s, this.sleepDuration + this.sendInterval)"
-param UsingCSMACAwithRTS.host[*].pingApp[*].stopTime -1s
 param UsingCSMACAwithRTS.host[*].ppp[*].egressTCType "\"\""
 param UsingCSMACAwithRTS.host[*].ppp[*].ingressTCType "\"\""
 param UsingCSMACAwithRTS.host[*].ppp[*].interfaceTableModule "absPath(\".interfaceTable\")"
@@ -164,6 +148,22 @@ param UsingCSMACAwithRTS.host[*].status.initialStatus "\"UP\""
 param UsingCSMACAwithRTS.host[*].tcpType "firstAvailableOrEmpty(\"TCP\", \"TCP_lwIP\", \"TCP_NSC\")"
 param UsingCSMACAwithRTS.host[*].tun[*].interfaceTableModule "absPath(\".interfaceTable\")"
 param UsingCSMACAwithRTS.host[*].tun[*].mtu 1500B
+param UsingCSMACAwithRTS.host[0].udpApp[*].typename "\"UDPSink\""
+param UsingCSMACAwithRTS.host[0].udpApp[*].localPort 5000
+param UsingCSMACAwithRTS.host[1].udpApp[*].typename "\"UDPBasicApp\""
+param UsingCSMACAwithRTS.host[1].udpApp[*].destAddresses "\"host[0]\""
+param UsingCSMACAwithRTS.host[1].udpApp[*].destPort 5000
+param UsingCSMACAwithRTS.host[1].udpApp[*].messageLength 1000B
+param UsingCSMACAwithRTS.host[1].udpApp[*].sendInterval exponential(10ms)
+param UsingCSMACAwithRTS.host[1].udpApp[*].packetName "\"UDPData\""
+param UsingCSMACAwithRTS.host[2].udpApp[*].typename "\"UDPSink\""
+param UsingCSMACAwithRTS.host[2].udpApp[*].localPort 5002
+param UsingCSMACAwithRTS.host[3].udpApp[*].typename "\"UDPBasicApp\""
+param UsingCSMACAwithRTS.host[3].udpApp[*].destAddresses "\"host[2]\""
+param UsingCSMACAwithRTS.host[3].udpApp[*].destPort 5002
+param UsingCSMACAwithRTS.host[3].udpApp[*].messageLength 1000B
+param UsingCSMACAwithRTS.host[3].udpApp[*].sendInterval exponential(10ms)
+param UsingCSMACAwithRTS.host[3].udpApp[*].packetName "\"UDPData\""
 param UsingCSMACAwithRTS.host[*].udpType "firstAvailableOrEmpty(\"UDP\")"
 param UsingCSMACAwithRTS.host[*].wlan[*]._agentNeeded "(mgmtType == \"Ieee80211MgmtSTA\")"
 param UsingCSMACAwithRTS.host[*].wlan[*].agent.activeScan true
@@ -875,93 +875,105 @@ vector 25 UsingCSMACAwithRTS.host[1].wlan[0].mac.hcf.edca.edcaf[3].contention st
 attr interpolationmode none
 attr source stateChanged
 attr title "contention state, vector"
-vector 26 UsingCSMACAwithRTS.host[1].pingApp[0] pingTxSeq:vector ETV
+vector 26 UsingCSMACAwithRTS.host[1].udpApp[0] sentPk:vector(packetBytes) ETV
 attr interpolationmode none
-attr title "ping tx seq, vector"
-vector 27 UsingCSMACAwithRTS.host[1].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+vector 27 UsingCSMACAwithRTS.host[1].udp sentPk:vector(packetBytes) ETV
 attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packets received from higher layer, vector(packetBytes)"
-vector 28 UsingCSMACAwithRTS.host[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets sent to lower layer, vector(packetBytes)"
-vector 29 UsingCSMACAwithRTS.host[1].wlan[0].radio transmissionState:vector ETV
-attr interpolationmode sample-hold
-attr source transmissionStateChanged
-attr title "Radio transmission state, vector"
-vector 30 UsingCSMACAwithRTS.host[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceivedFromLower
-attr title "packets received from lower layer, vector(packetBytes)"
-vector 31 UsingCSMACAwithRTS.host[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets sent to lower layer, vector(packetBytes)"
-vector 32 UsingCSMACAwithRTS.host[0].wlan[0].radio transmissionState:vector ETV
-attr interpolationmode sample-hold
-attr source transmissionStateChanged
-attr title "Radio transmission state, vector"
-vector 33 UsingCSMACAwithRTS.host[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceivedFromLower
-attr title "packets received from lower layer, vector(packetBytes)"
-vector 34 UsingCSMACAwithRTS.host[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, vector(packetBytes)"
-vector 35 UsingCSMACAwithRTS.host[0].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+vector 28 UsingCSMACAwithRTS.host[1].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packets received from higher layer, vector(packetBytes)"
-vector 36 UsingCSMACAwithRTS.host[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+vector 29 UsingCSMACAwithRTS.host[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 30 UsingCSMACAwithRTS.host[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 31 UsingCSMACAwithRTS.host[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 32 UsingCSMACAwithRTS.host[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 33 UsingCSMACAwithRTS.host[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 34 UsingCSMACAwithRTS.host[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 35 UsingCSMACAwithRTS.host[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
-vector 37 UsingCSMACAwithRTS.host[1].pingApp[0] pingRxSeq:vector ETV
+vector 36 UsingCSMACAwithRTS.host[0].udp rcvdPk:vector(packetBytes) ETV
 attr interpolationmode none
-attr title "ping rx seq, vector"
-vector 38 UsingCSMACAwithRTS.host[1].pingApp[0] rtt:vector ETV
+attr source rcvdPk
+attr title "packets received, vector(packetBytes)"
+vector 37 UsingCSMACAwithRTS.host[0].udp passedUpPk:vector(count) ETV
 attr interpolationmode none
-attr title "ping round-trip time, vector"
+attr title "packets passed up, vector(count)"
+vector 38 UsingCSMACAwithRTS.host[0].udpApp[0] rcvdPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rcvdPk
+attr title "packets received, vector(packetBytes)"
+vector 39 UsingCSMACAwithRTS.host[0].udpApp[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr source messageAge(rcvdPk)
+attr title "end-to-end delay, vector"
 attr unit s
-0	69228 22597 0 210 0 1.715855721111 587 0.029696607603692 0.033088614501116 18.687593891164 0.5954825465299
-1	91825 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
-2	91838 22553 0 210 0 1.715855721111 587 0.031678007737501 0.035070014467444 19.85281802389 0.67198413105986
-3	114391 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
-4	114404 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
-5	114417 2450 0 205 0 1.715845616186 98 0 0.1 0.856 0.070792
-6	116867 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
-7	116880 2399 0 210 0 1.715855699896 97 0 0.1 0.862 0.070884
-8	119279 344 0 205 0 1.715845616186 16 0 3 37 95
-9	119623 2441 0 205 0 1.715845616186 97 0 0.1 0.856 0.070792
-10	122064 10 0 0 0 0 1 0 0 0 0
-11	122074 333 0 209 0 1.715855699896 15 0 3 35 91
-12	122407 2486 0 210 0 1.715855699896 96 0 0.1 0.862 0.070884
-13	124893 10 0 0 0 0 1 0 0 0 0
-14	124903 642 0 205 0 1.715845616186 27 0 3 32 68
-15	125545 659 0 209 0 1.715855699896 28 0 3 35 77
-16	126204 756 0 201 0 1.715811616186 32 0 2 12 20
-17	126960 560 0 201 0 1.715811616186 24 0 0 0 0
-18	127520 560 0 201 0 1.715811616186 24 0 0 0 0
-19	128080 560 0 201 0 1.715811616186 24 0 0 0 0
-20	128640 560 0 201 0 1.715811616186 24 0 0 0 0
-21	129200 756 0 209 0 1.715855699896 32 0 2 8 16
-22	129956 560 0 209 0 1.715855699896 24 0 0 0 0
-23	130516 560 0 209 0 1.715855699896 24 0 0 0 0
-24	131076 560 0 209 0 1.715855699896 24 0 0 0 0
-25	131636 560 0 209 0 1.715855699896 24 0 0 0 0
-26	132196 49 25 150 0.715189364972 1.715189364972 2 0 1 1 1
-27	132245 53 29 154 0.715189364972 1.715189364972 2 120 120 240 28800
-28	132298 178 32 208 0.715189364972 1.715855699896 7 14 120 322 30188
-29	132476 626 33 210 0.715189364972 1.715855699896 26 0 2 27 41
-30	133102 154 39 180 0.715223494886 1.715323616186 6 14 120 308 29992
-31	133256 178 40 200 0.715233494886 1.715811616186 7 14 120 216 15984
-32	133434 680 41 205 0.715233494886 1.715845616186 28 0 2 28 42
-33	134114 176 47 207 0.7152676248 1.715845699896 7 14 120 216 15984
-34	134290 53 55 180 0.715323754713 1.715323616186 2 120 120 240 28800
-35	134343 53 61 186 0.715323754713 1.715323616186 2 120 120 240 28800
-36	134396 26 98 98 0.716286144408 0.716286144408 1 120 120 120 14400
-37	134422 25 102 102 0.716286144408 0.716286144408 1 0 0 0 0
-38	134447 38 102 102 0.716286144408 0.716286144408 1 0.001096779436 0.001096779436 0.001096779436 1.2029251312325e-006
+vector 40 UsingCSMACAwithRTS.host[0].udpApp[0] rcvdPkSeqNo:vector ETV
+attr interpolationmode none
+attr source appPkSeqNo(rcvdPk)
+attr title "received packet sequence number, vector"
+0	69699 7592 0 69 0 0.020465451447 196 0.029693395074463 0.029721726504058 5.8240310037285 0.17305785640429
+1	77291 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
+2	77304 7647 0 69 0 0.020465451447 197 0.031678007737501 0.031703126352661 6.2435859661649 0.19788004256289
+3	84951 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
+4	84964 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
+5	84977 799 0 67 0 0.020431461425 34 0 0.1 0.26 0.02036
+6	85776 13 0 0 0 0 1 0.004 0.004 0.004 1.6e-005
+7	85789 982 0 69 0 0.02046531898 42 0 0.1 0.36 0.03028
+8	86771 110 0 54 0 0.013091735386 6 0 3 12 30
+9	86881 790 0 67 0 0.020431461425 33 0 0.1 0.26 0.02036
+10	87671 10 0 0 0 0 1 0 0 0 0
+11	87681 160 0 69 0 0.02046531898 8 0 3 17 43
+12	87841 1014 0 69 0 0.02046531898 41 0 0.1 0.36 0.03028
+13	88855 10 0 0 0 0 1 0 0 0 0
+14	88865 226 0 67 0 0.020431461425 10 0 3 14 32
+15	89091 246 0 69 0 0.02046531898 11 0 3 12 24
+16	89337 260 0 67 0 0.020431461425 12 0 0 0 0
+17	89597 260 0 67 0 0.020431461425 12 0 0 0 0
+18	89857 260 0 67 0 0.020431461425 12 0 0 0 0
+19	90117 260 0 67 0 0.020431461425 12 0 0 0 0
+20	90377 260 0 67 0 0.020431461425 12 0 0 0 0
+21	90637 344 0 65 0 0.02043131898 16 0 2 8 16
+22	90981 160 0 65 0 0.02043131898 8 0 0 0 0
+23	91141 160 0 65 0 0.02043131898 8 0 0 0 0
+24	91301 160 0 65 0 0.02043131898 8 0 0 0 0
+25	91461 160 0 65 0 0.02043131898 8 0 0 0 0
+26	91621 52 10 57 0.01255930758 0.02043131898 2 1000 1000 2000 2000000
+27	91673 52 12 58 0.01255930758 0.02043131898 2 1008 1008 2016 2032128
+28	91725 52 15 61 0.01255930758 0.02043131898 2 1064 1064 2128 2264192
+29	91777 75 18 64 0.01255930758 0.02043131898 3 20 1064 1104 1132896
+30	91852 280 19 69 0.01255930758 0.02046531898 12 0 2 12 18
+31	92132 52 25 41 0.012593450183 0.012833735386 2 20 1064 1084 1132496
+32	92184 50 26 46 0.012603450183 0.012843735386 2 14 14 28 392
+33	92234 192 27 54 0.012603450183 0.013091735386 8 0 2 8 12
+34	92426 50 33 56 0.012637592785 0.013091877983 2 14 14 28 392
+35	92476 27 41 41 0.012833735386 0.012833735386 1 1064 1064 1064 1132096
+36	92503 27 44 44 0.012833735386 0.012833735386 1 1008 1008 1008 1016064
+37	92530 24 44 44 0.012833735386 0.012833735386 1 1 1 1 1
+38	92554 27 45 45 0.012833735386 0.012833735386 1 1000 1000 1000 1000000
+39	92581 37 45 45 0.012833735386 0.012833735386 1 0.000274427806 0.000274427806 0.000274427806 7.5310620705974e-008
+40	92618 24 45 45 0.012833735386 0.012833735386 1 0 0 0 0
 

@@ -1,4 +1,4 @@
-file 7948 1510603603                                            
+file 7948 1511395105                                            
 version 2
 run BMacWithAPSKDimensionalRadio-0-20171113-12:05:03-6572
 attr configname BMacWithAPSKDimensionalRadio
@@ -52,49 +52,48 @@ vector 0 UsingCSMACAwithNoRTS.host[0].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+0	3905 318 0 175 0 0.703599490263 15 0 2 21 35
 vector 1 UsingCSMACAwithNoRTS.host[1].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+1	4223 294 0 74 0 0.651967590051 14 0 3 21 39
 vector 2 UsingCSMACAwithNoRTS.host[2].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+2	4517 317 0 73 0 0.647810864802 15 0 2 21 35
 vector 3 UsingCSMACAwithNoRTS.host[2].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+3	4834 1167 10 248 0.002592622791 0.741967636944 50 0 3 82 196
 vector 4 UsingCSMACAwithNoRTS.host[1].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+4	6001 276 12 74 0.018508208147 0.651967590051 12 0 1 6 6
 vector 5 UsingCSMACAwithNoRTS.host[0].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+5	6277 634 14 244 0.043599490263 0.737022725099 27 0 3 35 77
 vector 6 UsingCSMACAwithNoRTS.host[1].pingApp[0] pingTxSeq:vector ETV
 attr interpolationmode none
 attr title "ping tx seq, vector"
+6	6911 23 55 55 0.548813502304 0.548813502304 1 0 0 0 0
 vector 7 UsingCSMACAwithNoRTS.host[1].networkLayer.arp sentReq:vector ETV
 attr title "ARP request sent, vector"
+7	6934 23 57 57 0.548813502304 0.548813502304 1 1 1 1 1
 vector 8 UsingCSMACAwithNoRTS.host[2].pingApp[0] pingTxSeq:vector ETV
 attr interpolationmode none
 attr title "ping tx seq, vector"
+8	6957 23 62 62 0.592844616389 0.592844616389 1 0 0 0 0
 vector 9 UsingCSMACAwithNoRTS.host[2].networkLayer.arp sentReq:vector ETV
 attr title "ARP request sent, vector"
+9	6980 23 64 64 0.592844616389 0.592844616389 1 1 1 1 1
 vector 10 UsingCSMACAwithNoRTS.host[1].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
-0	3905 318 0 175 0 0.703599490263 15 0 2 21 35
-1	4223 294 0 74 0 0.651967590051 14 0 3 21 39
-2	4517 317 0 73 0 0.647810864802 15 0 2 21 35
-3	4834 1167 10 248 0.002592622791 0.741967636944 50 0 3 82 196
-4	6001 276 12 74 0.018508208147 0.651967590051 12 0 1 6 6
-5	6277 634 14 244 0.043599490263 0.737022725099 27 0 3 35 77
-6	6911 23 55 55 0.548813502304 0.548813502304 1 0 0 0 0
-7	6934 23 57 57 0.548813502304 0.548813502304 1 1 1 1 1
-8	6957 23 62 62 0.592844616389 0.592844616389 1 0 0 0 0
-9	6980 23 64 64 0.592844616389 0.592844616389 1 1 1 1 1
-10	7003 943 74 247 0.651967590051 0.741967590051 38 1 2 57 95
-
+10	7003 945 74 247 0.651967590051 0.741967590051 38 1 2 57 95

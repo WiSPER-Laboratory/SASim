@@ -1,4 +1,4 @@
-file 9704 1510603710                                            
+file 9704 1511395105                                            
 version 2
 run CSMAWithAPSKDimensionalRadio-0-20171113-12:07:21-5952
 attr configname CSMAWithAPSKDimensionalRadio
@@ -54,80 +54,79 @@ vector 0 UsingCSMACAwithNoRTS.host[0].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+0	5087 350 0 302 0 2.551505621315 16 0 3 37 95
 vector 1 UsingCSMACAwithNoRTS.host[1].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+1	5437 206 0 288 0 2.550159502304 10 0 3 22 56
 vector 2 UsingCSMACAwithNoRTS.host[2].wlan[0].radio radioMode:vector ETV
 attr interpolationmode sample-hold
 attr source radioModeChanged
 attr title "Radio mode, vector"
+2	5643 160 0 224 0 1.593870616389 8 0 3 17 43
 vector 3 UsingCSMACAwithNoRTS.host[0].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+3	5803 672 0 302 0 2.551505621315 29 0 3 36 78
 vector 4 UsingCSMACAwithNoRTS.host[1].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+4	6475 669 0 303 0 2.551505740305 29 0 3 45 105
 vector 5 UsingCSMACAwithNoRTS.host[2].wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
+5	7144 667 0 308 0 2.551505799222 29 0 3 48 114
 vector 6 UsingCSMACAwithNoRTS.host[1].pingApp[0] pingTxSeq:vector ETV
 attr interpolationmode none
 attr title "ping tx seq, vector"
+6	7811 71 22 279 0.548813502304 2.548813502304 3 0 2 3 5
 vector 7 UsingCSMACAwithNoRTS.host[1].networkLayer.arp sentReq:vector ETV
 attr title "ARP request sent, vector"
+7	7882 23 24 24 0.548813502304 0.548813502304 1 1 1 1 1
 vector 8 UsingCSMACAwithNoRTS.host[1].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+8	7905 376 28 288 0.549261502304 2.550159502304 16 0 2 16 24
 vector 9 UsingCSMACAwithNoRTS.host[0].networkLayer.arp sentReply:vector ETV
 attr title "ARP replies sent, vector"
+9	8281 47 40 105 0.549615636873 0.593646738536 2 1 1 2 2
 vector 10 UsingCSMACAwithNoRTS.host[0].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+10	8328 692 44 302 0.550383636873 2.551505621315 28 0 2 28 42
 vector 11 UsingCSMACAwithNoRTS.host[1].pingApp[0] pingRxSeq:vector ETV
 attr interpolationmode none
 attr title "ping rx seq, vector"
+11	9020 74 82 307 0.553110040565 2.551505740305 3 0 2 3 5
 vector 12 UsingCSMACAwithNoRTS.host[1].pingApp[0] rtt:vector ETV
 attr interpolationmode none
 attr title "ping round-trip time, vector"
 attr unit s
+12	9094 113 82 307 0.553110040565 2.551505740305 3 0.002372311005 0.004296538261 0.009361087267 3.1336245986709e-005
 vector 13 UsingCSMACAwithNoRTS.host[2].pingApp[0] pingTxSeq:vector ETV
 attr interpolationmode none
 attr title "ping tx seq, vector"
+13	9207 49 87 215 0.592844616389 1.592844616389 2 0 1 1 1
 vector 14 UsingCSMACAwithNoRTS.host[2].networkLayer.arp sentReq:vector ETV
 attr title "ARP request sent, vector"
+14	9256 24 89 89 0.592844616389 0.592844616389 1 1 1 1 1
 vector 15 UsingCSMACAwithNoRTS.host[2].wlan[0].radio transmissionState:vector ETV
 attr interpolationmode sample-hold
 attr source transmissionStateChanged
 attr title "Radio transmission state, vector"
+15	9280 296 93 224 0.593292616389 1.593870616389 12 0 2 12 18
 vector 16 UsingCSMACAwithNoRTS.host[2].pingApp[0] pingRxSeq:vector ETV
 attr interpolationmode none
 attr title "ping rx seq, vector"
+16	9576 50 145 245 0.597141105398 1.595216988887 2 0 1 1 1
 vector 17 UsingCSMACAwithNoRTS.host[2].pingApp[0] rtt:vector ETV
 attr interpolationmode none
 attr title "ping round-trip time, vector"
 attr unit s
-0	5087 350 0 302 0 2.551505621315 16 0 3 37 95
-1	5437 206 0 288 0 2.550159502304 10 0 3 22 56
-2	5643 160 0 224 0 1.593870616389 8 0 3 17 43
-3	5803 672 0 302 0 2.551505621315 29 0 3 36 78
-4	6475 669 0 303 0 2.551505740305 29 0 3 45 105
-5	7144 667 0 308 0 2.551505799222 29 0 3 48 114
-6	7811 71 22 279 0.548813502304 2.548813502304 3 0 2 3 5
-7	7882 23 24 24 0.548813502304 0.548813502304 1 1 1 1 1
-8	7905 376 28 288 0.549261502304 2.550159502304 16 0 2 16 24
-9	8281 47 40 105 0.549615636873 0.593646738536 2 1 1 2 2
-10	8328 692 44 302 0.550383636873 2.551505621315 28 0 2 28 42
-11	9020 74 82 307 0.553110040565 2.551505740305 3 0 2 3 5
-12	9094 113 82 307 0.553110040565 2.551505740305 3 0.002372311005 0.004296538261 0.009361087267 3.1336245986709e-005
-13	9207 49 87 215 0.592844616389 1.592844616389 2 0 1 1 1
-14	9256 24 89 89 0.592844616389 0.592844616389 1 1 1 1 1
-15	9280 296 93 224 0.593292616389 1.593870616389 12 0 2 12 18
-16	9576 50 145 245 0.597141105398 1.595216988887 2 0 1 1 1
-17	9626 76 145 245 0.597141105398 1.595216988887 2 0.002372372498 0.004296489009 0.006668861507 2.4087969073725e-005
-
+17	9626 78 145 245 0.597141105398 1.595216988887 2 0.002372372498 0.004296489009 0.006668861507 2.4087969073725e-005
