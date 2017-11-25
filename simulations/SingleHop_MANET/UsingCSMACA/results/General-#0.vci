@@ -1,0 +1,1065 @@
+file 5421228 1511608617                                         
+version 2
+run General-0-20171125-03:16:04-4152
+attr configname General
+attr datetime 20171125-03:16:04
+attr experiment General
+attr inifile omnetpp_Sim2.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network UsingCSMACA
+attr processid 4152
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param UsingCSMACA.host[*].wlan[*].typename "\"Ieee80211Nic\""
+param UsingCSMACA.numHosts 4
+param UsingCSMACA.radioMediumType "\"Ieee80211ScalarRadioMedium\""
+param UsingCSMACA.host[*].hasStatus false
+param UsingCSMACA.host[*].numExtInterfaces 0
+param UsingCSMACA.host[*].numRadios 1
+param UsingCSMACA.host[*].numPcapRecorders 0
+param UsingCSMACA.host[*].numTunInterfaces 0
+param UsingCSMACA.host[*].osgModel "\"\""
+param UsingCSMACA.host[*].osgModelColor "\"\""
+param UsingCSMACA.host[*].mobilityType "\"MassMobility\""
+param UsingCSMACA.host[*].networkLayerType "\"IPv4NetworkLayer\""
+param UsingCSMACA.host[*].routingTableType "\"IPv4RoutingTable\""
+param UsingCSMACA.host[*].forwarding false
+param UsingCSMACA.host[*].multicastForwarding false
+param UsingCSMACA.host[*].energyStorageType "\"\""
+param UsingCSMACA.host[*].energyManagementType "\"\""
+param UsingCSMACA.host[*].energyGeneratorType "\"\""
+param UsingCSMACA.host[*].numTcpApps 0
+param UsingCSMACA.host[*].numUdpApps 0
+param UsingCSMACA.host[*].numSctpApps 0
+param UsingCSMACA.host[0].numPingApps 0
+param UsingCSMACA.host[1].numPingApps 1
+param UsingCSMACA.host[2].numPingApps 0
+param UsingCSMACA.host[3].numPingApps 1
+param UsingCSMACA.host[*].tcpType "firstAvailableOrEmpty(\"TCP\", \"TCP_lwIP\", \"TCP_NSC\")"
+param UsingCSMACA.host[*].udpType "firstAvailableOrEmpty(\"UDP\")"
+param UsingCSMACA.host[*].sctpType "firstAvailableOrEmpty(\"SCTP\")"
+param UsingCSMACA.host[*].status.initialStatus "\"UP\""
+param UsingCSMACA.host[*].mobility.coordinateSystemModule "\"\""
+param UsingCSMACA.host[*].mobility.visualizeMobility true
+param UsingCSMACA.host[*].mobility.visualRepresentation "\"^\""
+param UsingCSMACA.host[*].mobility.constraintAreaMinX 0m
+param UsingCSMACA.host[*].mobility.constraintAreaMinY 0m
+param UsingCSMACA.host[*].mobility.constraintAreaMinZ 0m
+param UsingCSMACA.host[*].mobility.constraintAreaMaxX 60m
+param UsingCSMACA.host[*].mobility.constraintAreaMaxY 40m
+param UsingCSMACA.host[*].mobility.constraintAreaMaxZ 0m
+param UsingCSMACA.host[*].mobility.updateInterval 100ms
+param UsingCSMACA.host[*].mobility.startAngle "uniform(0deg, 360deg)"
+param UsingCSMACA.host[*].mobility.initFromDisplayString false
+param UsingCSMACA.host[*].mobility.changeInterval "truncnormal(2s, 0.5s)"
+param UsingCSMACA.host[*].mobility.changeAngleBy "normal(0deg, 30deg)"
+param UsingCSMACA.host[*].mobility.speed "truncnormal(20mps, 8mps)"
+param UsingCSMACA.host[*].networkLayer.proxyARP false
+param UsingCSMACA.host[*].networkLayer.igmpType "\"IGMPv2\""
+param UsingCSMACA.host[*].networkLayer.arpType "\"ARP\""
+param UsingCSMACA.host[*].networkLayer.interfaceTableModule "absPath(\".interfaceTable\")"
+param UsingCSMACA.host[*].networkLayer.configurator.networkConfiguratorModule "\"configurator\""
+param UsingCSMACA.host[*].networkLayer.configurator.configureRoutingTable true
+param UsingCSMACA.host[*].networkLayer.ip.arpModule "absPath(\".arp\")"
+param UsingCSMACA.host[*].networkLayer.ip.icmpModule "absPath(\".icmp\")"
+param UsingCSMACA.host[*].networkLayer.ip.procDelay 0s
+param UsingCSMACA.host[*].networkLayer.ip.timeToLive 32
+param UsingCSMACA.host[*].networkLayer.ip.multicastTimeToLive 32
+param UsingCSMACA.host[*].networkLayer.ip.fragmentTimeout 60s
+param UsingCSMACA.host[*].networkLayer.ip.forceBroadcast false
+param UsingCSMACA.host[*].networkLayer.ip.useProxyARP true
+param UsingCSMACA.host[*].networkLayer.arp.retryTimeout 1s
+param UsingCSMACA.host[*].networkLayer.arp.retryCount 3
+param UsingCSMACA.host[*].networkLayer.arp.cacheTimeout 120s
+param UsingCSMACA.host[*].networkLayer.arp.respondToProxyARP proxyARP
+param UsingCSMACA.host[*].networkLayer.igmp.enabled true
+param UsingCSMACA.host[*].networkLayer.igmp.robustnessVariable 2
+param UsingCSMACA.host[*].networkLayer.igmp.queryInterval 125s
+param UsingCSMACA.host[*].networkLayer.igmp.queryResponseInterval 10s
+param UsingCSMACA.host[*].networkLayer.igmp.lastMemberQueryInterval 1s
+param UsingCSMACA.host[*].networkLayer.igmp.unsolicitedReportInterval 10s
+param UsingCSMACA.host[*].routingTable.interfaceTableModule "absPath(\".interfaceTable\")"
+param UsingCSMACA.host[*].routingTable.routerId "\"auto\""
+param UsingCSMACA.host[*].routingTable.netmaskRoutes "\"*\""
+param UsingCSMACA.host[*].routingTable.forwarding forwarding
+param UsingCSMACA.host[*].routingTable.multicastForwarding multicastForwarding
+param UsingCSMACA.host[*].routingTable.useAdminDist false
+param UsingCSMACA.host[*].routingTable.routingFile "\"\""
+param UsingCSMACA.host[*].interfaceTable.displayAddresses false
+param UsingCSMACA.host[*].pcapRecorder[*].verbose false
+param UsingCSMACA.host[*].pcapRecorder[*].pcapFile "\"\""
+param UsingCSMACA.host[*].pcapRecorder[*].snaplen 65535
+param UsingCSMACA.host[*].pcapRecorder[*].dumpBadFrames true
+param UsingCSMACA.host[*].pcapRecorder[*].moduleNamePatterns "\"wlan[*] eth[*] ppp[*] ext[*]\""
+param UsingCSMACA.host[*].pcapRecorder[*].sendingSignalNames "\"packetSentToLower\""
+param UsingCSMACA.host[*].pcapRecorder[*].receivingSignalNames "\"packetReceivedFromLower\""
+param UsingCSMACA.host[*].pcapRecorder[*].alwaysFlush false
+param UsingCSMACA.host[*].lo0.interfaceTableModule "absPath(\".interfaceTable\")"
+param UsingCSMACA.host[*].lo0.numOutputHooks 0
+param UsingCSMACA.host[*].lo0.numInputHooks 0
+param UsingCSMACA.host[*].lo0.lo.mtu 4470B
+param UsingCSMACA.host[*].wlan[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param UsingCSMACA.host[*].wlan[*].classifierType "\"\""
+param UsingCSMACA.host[*].wlan[*].mgmtType "\"Ieee80211MgmtAdhoc\""
+param UsingCSMACA.host[*].wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param UsingCSMACA.host[*].wlan[*].macType "\"Ieee80211CompatibleMac\""
+param UsingCSMACA.host[*].wlan[*].opMode "\"g(mixed)\""
+param UsingCSMACA.host[*].wlan[*].bitrate 54Mbps
+param UsingCSMACA.host[*].wlan[*]._agentNeeded "(mgmtType == \"Ieee80211MgmtSTA\")"
+param UsingCSMACA.host[*].wlan[*].agent.interfaceTableModule absPath(interfaceTableModule)
+param UsingCSMACA.host[*].wlan[*].agent.activeScan true
+param UsingCSMACA.host[*].wlan[*].agent.channelsToScan "\"\""
+param UsingCSMACA.host[*].wlan[*].agent.probeDelay 100ms
+param UsingCSMACA.host[*].wlan[*].agent.minChannelTime 150ms
+param UsingCSMACA.host[*].wlan[*].agent.maxChannelTime 300ms
+param UsingCSMACA.host[*].wlan[*].agent.authenticationTimeout 5s
+param UsingCSMACA.host[*].wlan[*].agent.associationTimeout 5s
+param UsingCSMACA.host[*].wlan[*].agent.startingTime -1s
+param UsingCSMACA.host[*].wlan[*].agent.default_ssid "\"SSID\""
+param UsingCSMACA.host[*].wlan[*].mgmt.macModule "\"^.mac\""
+param UsingCSMACA.host[*].wlan[*].mac.mtu 2304B
+param UsingCSMACA.host[*].wlan[*].mac.address "\"auto\""
+param UsingCSMACA.host[*].wlan[*].mac.modeSet opMode
+param UsingCSMACA.host[*].wlan[*].mac.qosStation false
+param UsingCSMACA.host[*].wlan[*].mac.rateControlType "\"\""
+param UsingCSMACA.host[*].wlan[*].mac.opMode opMode
+param UsingCSMACA.host[*].wlan[*].mac.bitrate bitrate
+param UsingCSMACA.host[*].wlan[*].mac.basicBitrate 2Mbps
+param UsingCSMACA.host[*].wlan[*].mac.dataBitrate 54Mbps
+param UsingCSMACA.host[*].wlan[*].mac.multicastBitrate 2Mbps
+param UsingCSMACA.host[*].wlan[*].mac.controlBitrate 2Mbps
+param UsingCSMACA.host[*].wlan[*].mac.initialRateControlRate -1bps
+param UsingCSMACA.host[*].wlan[*].mac.rtsThresholdBytes 2346B
+param UsingCSMACA.host[*].wlan[*].mac.retryLimit -1
+param UsingCSMACA.host[*].wlan[*].mac.EDCA false
+param UsingCSMACA.host[*].wlan[*].mac.maxQueueSize 14
+param UsingCSMACA.host[*].wlan[*].mac.AIFSN0 7
+param UsingCSMACA.host[*].wlan[*].mac.AIFSN1 3
+param UsingCSMACA.host[*].wlan[*].mac.AIFSN2 2
+param UsingCSMACA.host[*].wlan[*].mac.AIFSN3 2
+param UsingCSMACA.host[*].wlan[*].mac.TXOP0 0s
+param UsingCSMACA.host[*].wlan[*].mac.TXOP1 0s
+param UsingCSMACA.host[*].wlan[*].mac.TXOP2 3.008ms
+param UsingCSMACA.host[*].wlan[*].mac.TXOP3 1.504ms
+param UsingCSMACA.host[*].wlan[*].mac.AIFSN 2
+param UsingCSMACA.host[*].wlan[*].mac.prioritizeMulticast false
+param UsingCSMACA.host[*].wlan[*].mac.slotTime -1s
+param UsingCSMACA.host[*].wlan[*].mac.cwMinData -1
+param UsingCSMACA.host[*].wlan[*].mac.cwMaxData -1
+param UsingCSMACA.host[*].wlan[*].mac.dcf.maxQueueSize maxQueueSize
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rxModule "\"^.rx\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.txModule "\"^.tx\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateControlType rateControlType
+param UsingCSMACA.host[*].wlan[*].mac.dcf.prioritizeMulticast false
+param UsingCSMACA.host[*].wlan[*].mac.dcf.channelAccess.difsTime -1s
+param UsingCSMACA.host[*].wlan[*].mac.dcf.channelAccess.cwMin cwMinData
+param UsingCSMACA.host[*].wlan[*].mac.dcf.channelAccess.cwMax cwMaxData
+param UsingCSMACA.host[*].wlan[*].mac.dcf.channelAccess.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.channelAccess.rxModule "\"^.\" + rxModule"
+param UsingCSMACA.host[*].wlan[*].mac.dcf.channelAccess.contention.initialChannelBusy true
+param UsingCSMACA.host[*].wlan[*].mac.dcf.channelAccess.contention.backoffOptimization true
+param UsingCSMACA.host[*].wlan[*].mac.dcf.originatorMacDataService.fragmentationPolicyModuleType "\"BasicFragmentationPolicy\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.originatorMacDataService.fragmentationPolicy.fragmentationThreshold 1500B
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateSelection.rateControlModule "\"^.rateControl\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateSelection.multicastFrameBitrate multicastBitrate
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateSelection.responseAckFrameBitrate controlBitrate
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateSelection.responseCtsFrameBitrate -1bps
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateSelection.dataFrameBitrate dataBitrate
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateSelection.mgmtFrameBitrate mgmtBitrate
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rateSelection.controlFrameBitrate controlBitrate
+param UsingCSMACA.host[*].wlan[*].mac.dcf.recoveryProcedure.cwCalculatorModule "\"^.channelAccess\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.recoveryProcedure.rtsPolicyModule "\"^.rtsPolicy\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.recoveryProcedure.shortRetryLimit 7
+param UsingCSMACA.host[*].wlan[*].mac.dcf.recoveryProcedure.longRetryLimit 4
+param UsingCSMACA.host[*].wlan[*].mac.dcf.originatorProtectionMechanism.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.originatorAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.originatorAckPolicy.ackTimeout -1s
+param UsingCSMACA.host[*].wlan[*].mac.dcf.recipientAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rtsPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rtsPolicy.ctsTimeout -1s
+param UsingCSMACA.host[*].wlan[*].mac.dcf.rtsPolicy.rtsThreshold rtsThresholdBytes
+param UsingCSMACA.host[*].wlan[*].mac.dcf.ctsPolicy.rxModule "\"^.\" + rxModule"
+param UsingCSMACA.host[*].wlan[*].mac.dcf.ctsPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.numEdcafs 4
+param UsingCSMACA.host[*].wlan[*].mac.hcf.maxQueueSize maxQueueSize
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateControlType rateControlType
+param UsingCSMACA.host[*].wlan[*].mac.hcf.isBlockAckSupported false
+param UsingCSMACA.host[*].wlan[*].mac.hcf.prioritizeMulticast false
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rxModule "\"^.rx\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.txModule "\"^.tx\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.numEdcafs numEdcafs
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.rxModule "\"^.\" + rxModule"
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_BE\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_VI\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_VO\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory "\"AC_BK\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].accessCategory ""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].aifsn -1
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].cwMin -1
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].cwMax -1
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].rateSelectionModule "\"^.\" + rateSelectionModule"
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].rxModule "\"^.\" + rxModule"
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].collisionControllerModule "\"^.collisionController\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].contention.initialChannelBusy true
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edca.edcaf[*].contention.backoffOptimization true
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorMacDataService.aMsduAggregationPolicyType "\"BasicMsduAggregationPolicy\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorMacDataService.fragmentationPolicyType "\"BasicFragmentationPolicy\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.subframeNumThreshold -1
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.aggregationLengthThreshold -1
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.maxAMsduSize 4065
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorMacDataService.msduAggregationPolicy.qOsCheck true
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorMacDataService.fragmentationPolicy.fragmentationThreshold 1500B
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.rateControlModule "\"^.rateControl\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.multicastFrameBitrate multicastBitrate
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.responseAckFrameBitrate controlBitrate
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.responseBlockAckFrameBitrate -1bps
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.responseCtsFrameBitrate -1bps
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.dataFrameBitrate dataBitrate
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.mgmtFrameBitrate mgmtBitrate
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rateSelection.controlFrameBitrate controlBitrate
+param UsingCSMACA.host[*].wlan[*].mac.hcf.singleProtectionMechanism.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.cwCalculatorModule "\"^.edca.edcaf[1]\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.rtsPolicyModule "\"^.rtsPolicy\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.shortRetryLimit 7
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaMgmtAndNonQoSRecoveryProcedure.longRetryLimit 4
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].cwCalculatorModule "\"^.edca.edcaf[\" + string(index) + \"]\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].rtsPolicyModule "\"^.rtsPolicy\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].shortRetryLimit 7
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaDataRecoveryProcedures[*].longRetryLimit 4
+param UsingCSMACA.host[*].wlan[*].mac.hcf.edcaTxopProcedures[*].txopLimit -1s
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorAckPolicy.blockAckReqTreshold 5
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorAckPolicy.maxBlockAckPolicyFrameLength 1000B
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorAckPolicy.blockAckTimeout -1s
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorAckPolicy.ackTimeout -1s
+param UsingCSMACA.host[*].wlan[*].mac.hcf.recipientAckPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rtsPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rtsPolicy.ctsTimeout -1s
+param UsingCSMACA.host[*].wlan[*].mac.hcf.rtsPolicy.rtsThreshold 2346B
+param UsingCSMACA.host[*].wlan[*].mac.hcf.ctsPolicy.rxModule "\"^.\" + rxModule"
+param UsingCSMACA.host[*].wlan[*].mac.hcf.ctsPolicy.rateSelectionModule "\"^.rateSelection\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.originatorAckPolicyModule "\"^.originatorAckPolicy\""
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.delayedAckPolicySupported false
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.aMsduSupported true
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.maximumAllowedBufferSize 64
+param UsingCSMACA.host[*].wlan[*].mac.hcf.originatorBlockAckAgreementPolicy.blockAckTimeoutValue 0s
+param UsingCSMACA.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.delayedAckPolicySupported false
+param UsingCSMACA.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.aMsduSupported true
+param UsingCSMACA.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.maximumAllowedBufferSize 64
+param UsingCSMACA.host[*].wlan[*].mac.hcf.recipientBlockAckAgreementPolicy.blockAckTimeoutValue 0s
+param UsingCSMACA.host[*].wlan[*].mac.rx.statisticsModule "\"\""
+param UsingCSMACA.host[*].wlan[*].mac.tx.rxModule "\"^.rx\""
+param UsingCSMACA.host[*].wlan[*].mac.tx.statisticsModule "\"\""
+param UsingCSMACA.host[*].wlan[*].radio.antennaType "\"IsotropicAntenna\""
+param UsingCSMACA.host[*].wlan[*].radio.transmitterType "\"Ieee80211ScalarTransmitter\""
+param UsingCSMACA.host[*].wlan[*].radio.receiverType "\"Ieee80211ScalarReceiver\""
+param UsingCSMACA.host[*].wlan[*].radio.energyConsumerType "\"\""
+param UsingCSMACA.host[*].wlan[*].radio.radioMediumModule "\"radioMedium\""
+param UsingCSMACA.host[*].wlan[*].radio.switchingTimes "\"ms 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\""
+param UsingCSMACA.host[*].wlan[*].radio.separateTransmissionParts false
+param UsingCSMACA.host[*].wlan[*].radio.separateReceptionParts false
+param UsingCSMACA.host[*].wlan[*].radio.displayCommunicationRange false
+param UsingCSMACA.host[*].wlan[*].radio.displayInterferenceRange false
+param UsingCSMACA.host[*].wlan[*].radio.carrierFrequency 2.412GHz
+param UsingCSMACA.host[*].wlan[*].radio.bandwidth 2MHz
+param UsingCSMACA.host[*].wlan[*].radio.opMode opMode
+param UsingCSMACA.host[*].wlan[*].radio.bandName "\"2.4 GHz\""
+param UsingCSMACA.host[*].wlan[*].radio.channelNumber 0
+param UsingCSMACA.host[*].wlan[*].radio.antenna.mobilityModule "\".mobility\""
+param UsingCSMACA.host[*].wlan[*].radio.antenna.numAntennas 1
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.preambleDuration 0s/0
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.headerBitLength 192b
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.bitrate bitrate
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.power 20mW
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.carrierFrequency carrierFrequency
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.bandwidth bandwidth
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.modulation "\"BPSK\""
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.opMode opMode
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.bandName bandName
+param UsingCSMACA.host[*].wlan[*].radio.transmitter.channelNumber channelNumber
+param UsingCSMACA.host[*].wlan[*].radio.receiver.energyDetection -85dBm
+param UsingCSMACA.host[*].wlan[*].radio.receiver.sensitivity -85dBm
+param UsingCSMACA.host[*].wlan[*].radio.receiver.snirThreshold 4dB
+param UsingCSMACA.host[*].wlan[*].radio.receiver.carrierFrequency carrierFrequency
+param UsingCSMACA.host[*].wlan[*].radio.receiver.bandwidth bandwidth
+param UsingCSMACA.host[*].wlan[*].radio.receiver.errorModelType "\"Ieee80211NistErrorModel\""
+param UsingCSMACA.host[*].wlan[*].radio.receiver.modulation "\"BPSK\""
+param UsingCSMACA.host[*].wlan[*].radio.receiver.opMode opMode
+param UsingCSMACA.host[*].wlan[*].radio.receiver.bandName bandName
+param UsingCSMACA.host[*].wlan[*].radio.receiver.channelNumber channelNumber
+param UsingCSMACA.host[*].eth[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param UsingCSMACA.host[*].eth[*].csmacdSupport false
+param UsingCSMACA.host[*].eth[*].macType "csmacdSupport ? \"EtherMAC\" : \"EtherMACFullDuplex\""
+param UsingCSMACA.host[*].eth[*].queueType "\"\""
+param UsingCSMACA.host[*].eth[*].ingressTCType "\"\""
+param UsingCSMACA.host[*].eth[*].egressTCType "\"\""
+param UsingCSMACA.host[*].eth[*].encapType "\"EtherEncap\""
+param UsingCSMACA.host[*].eth[*].numOutputHooks 0
+param UsingCSMACA.host[*].eth[*].numInputHooks 0
+param UsingCSMACA.host[*].eth[*].queue.dataQueueType queueType
+param UsingCSMACA.host[*].eth[*].queue.pauseQueue.frameCapacity 100
+param UsingCSMACA.host[*].eth[*].queue.pauseQueue.queueName "\"pauseQueue\""
+param UsingCSMACA.host[*].eth[*].mac.txQueueLimit "(queueType == \"\" ? 10000 : 1)"
+param UsingCSMACA.host[*].eth[*].mac.queueModule "(queueType == \"\" ? \"\" : \"^.queue\")"
+param UsingCSMACA.host[*].eth[*].encap.interfaceTableModule absPath(interfaceTableModule)
+param UsingCSMACA.host[*].eth[*].encap.useSNAP false
+param UsingCSMACA.host[*].ppp[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param UsingCSMACA.host[*].ppp[*].queueType "\"DropTailQueue\""
+param UsingCSMACA.host[*].ppp[*].ingressTCType "\"\""
+param UsingCSMACA.host[*].ppp[*].egressTCType "\"\""
+param UsingCSMACA.host[*].ppp[*].numOutputHooks 0
+param UsingCSMACA.host[*].ppp[*].numInputHooks 0
+param UsingCSMACA.host[*].ppp[*].queue.frameCapacity 100
+param UsingCSMACA.host[*].ppp[*].queue.queueName "\"l2queue\""
+param UsingCSMACA.host[*].ppp[*].ppp.interfaceTableModule absPath(interfaceTableModule)
+param UsingCSMACA.host[*].ppp[*].ppp.txQueueLimit "(queueType == \"\" ? 10000 : 1)"
+param UsingCSMACA.host[*].ppp[*].ppp.queueModule "(queueType == \"\" ? \"\" : \"^.queue\")"
+param UsingCSMACA.host[*].ppp[*].ppp.mtu 4470B
+param UsingCSMACA.host[*].tun[*].interfaceTableModule "absPath(\".interfaceTable\")"
+param UsingCSMACA.host[*].tun[*].mtu 1500B
+param UsingCSMACA.host[1].pingApp[*].destAddr "\"host[0]\""
+param UsingCSMACA.host[3].pingApp[*].destAddr "\"host[2]\""
+param UsingCSMACA.host[*].pingApp[*].destAddr "\"\""
+param UsingCSMACA.host[*].pingApp[*].srcAddr "\"\""
+param UsingCSMACA.host[*].pingApp[*].packetSize 56B
+param UsingCSMACA.host[*].pingApp[*].sendInterval 1s
+param UsingCSMACA.host[*].pingApp[*].hopLimit 32
+param UsingCSMACA.host[*].pingApp[*].count -1
+param UsingCSMACA.host[*].pingApp[*].startTime "uniform(0s, this.sleepDuration + this.sendInterval)"
+param UsingCSMACA.host[*].pingApp[*].stopTime -1s
+param UsingCSMACA.host[*].pingApp[*].sleepDuration 0s
+param UsingCSMACA.host[*].pingApp[*].continuous false
+param UsingCSMACA.host[*].pingApp[*].printPing true
+param UsingCSMACA.configurator.minLinkWeight 1E-3
+param UsingCSMACA.configurator.config "xml(\"<config><interface hosts='**' address='10.x.x.x' netmask='255.x.x.x'/></config>\")"
+param UsingCSMACA.configurator.assignAddresses true
+param UsingCSMACA.configurator.assignDisjunctSubnetAddresses true
+param UsingCSMACA.configurator.addStaticRoutes true
+param UsingCSMACA.configurator.addDefaultRoutes true
+param UsingCSMACA.configurator.addSubnetRoutes true
+param UsingCSMACA.configurator.optimizeRoutes true
+param UsingCSMACA.configurator.dumpTopology false
+param UsingCSMACA.configurator.dumpLinks false
+param UsingCSMACA.configurator.dumpAddresses false
+param UsingCSMACA.configurator.dumpRoutes false
+param UsingCSMACA.configurator.dumpConfig "\"\""
+param UsingCSMACA.radioMedium.physicalEnvironmentModule "\"physicalEnvironment\""
+param UsingCSMACA.radioMedium.propagationType "\"ConstantSpeedPropagation\""
+param UsingCSMACA.radioMedium.pathLossType "\"FreeSpacePathLoss\""
+param UsingCSMACA.radioMedium.obstacleLossType "\"\""
+param UsingCSMACA.radioMedium.analogModelType "\"ScalarAnalogModel\""
+param UsingCSMACA.radioMedium.backgroundNoiseType "\"IsotropicScalarBackgroundNoise\""
+param UsingCSMACA.radioMedium.mediumLimitCacheType "\"MediumLimitCache\""
+param UsingCSMACA.radioMedium.neighborCacheType "\"\""
+param UsingCSMACA.radioMedium.communicationCacheType "\"VectorCommunicationCache\""
+param UsingCSMACA.radioMedium.rangeFilter "\"\""
+param UsingCSMACA.radioMedium.radioModeFilter false
+param UsingCSMACA.radioMedium.listeningFilter false
+param UsingCSMACA.radioMedium.macAddressFilter false
+param UsingCSMACA.radioMedium.recordCommunicationLog false
+param UsingCSMACA.radioMedium.propagation.propagationSpeed 299792458mps
+param UsingCSMACA.radioMedium.propagation.ignoreMovementDuringTransmission true
+param UsingCSMACA.radioMedium.propagation.ignoreMovementDuringPropagation true
+param UsingCSMACA.radioMedium.propagation.ignoreMovementDuringReception true
+param UsingCSMACA.radioMedium.backgroundNoise.power -110dBm
+param UsingCSMACA.radioMedium.pathLoss.alpha 2
+param UsingCSMACA.radioMedium.pathLoss.systemLoss 0dB
+param UsingCSMACA.radioMedium.mediumLimitCache.carrierFrequency 2.4GHz
+param UsingCSMACA.radioMedium.mediumLimitCache.maxSpeed 0mps/0
+param UsingCSMACA.radioMedium.mediumLimitCache.maxTransmissionPower 0W/0
+param UsingCSMACA.radioMedium.mediumLimitCache.minInterferencePower -110dBm
+param UsingCSMACA.radioMedium.mediumLimitCache.minReceptionPower -85dBm
+param UsingCSMACA.radioMedium.mediumLimitCache.maxAntennaGain 0dB
+param UsingCSMACA.radioMedium.mediumLimitCache.minInterferenceTime 1ps
+param UsingCSMACA.radioMedium.mediumLimitCache.maxTransmissionDuration 10ms
+param UsingCSMACA.radioMedium.mediumLimitCache.maxCommunicationRange 0m/0
+param UsingCSMACA.radioMedium.mediumLimitCache.maxInterferenceRange 0m/0
+param UsingCSMACA.visualizer.sceneVisualizerType "\"SceneCanvasVisualizer\""
+param UsingCSMACA.visualizer.physicalEnvironmentVisualizerType "\"PhysicalEnvironmentCanvasVisualizer\""
+param UsingCSMACA.visualizer.networkNodeVisualizerType "\"NetworkNodeCanvasVisualizer\""
+param UsingCSMACA.visualizer.networkConnectionVisualizerType "\"NetworkConnectionCanvasVisualizer\""
+param UsingCSMACA.visualizer.mobilityVisualizerType "\"MobilityCanvasVisualizer\""
+param UsingCSMACA.visualizer.statisticVisualizerType "\"StatisticCanvasVisualizer\""
+param UsingCSMACA.visualizer.infoVisualizerType "\"InfoCanvasVisualizer\""
+param UsingCSMACA.visualizer.energyStorageVisualizerType "\"EnergyStorageCanvasVisualizer\""
+param UsingCSMACA.visualizer.mediumVisualizerType "\"MediumCanvasVisualizer\""
+param UsingCSMACA.visualizer.obstacleLossVisualizerType "\"TracingObstacleLossCanvasVisualizer\""
+param UsingCSMACA.visualizer.packetDropVisualizerType "\"PacketDropCanvasVisualizer\""
+param UsingCSMACA.visualizer.queueVisualizerType "\"QueueCanvasVisualizer\""
+param UsingCSMACA.visualizer.radioVisualizerType "\"RadioCanvasVisualizer\""
+param UsingCSMACA.visualizer.physicalLinkVisualizerType "\"PhysicalLinkCanvasVisualizer\""
+param UsingCSMACA.visualizer.interfaceTableVisualizerType "\"InterfaceTableCanvasVisualizer\""
+param UsingCSMACA.visualizer.dataLinkVisualizerType "\"DataLinkCanvasVisualizer\""
+param UsingCSMACA.visualizer.linkBreakVisualizerType "\"LinkBreakCanvasVisualizer\""
+param UsingCSMACA.visualizer.ieee80211VisualizerType "\"Ieee80211CanvasVisualizer\""
+param UsingCSMACA.visualizer.networkRouteVisualizerType "\"NetworkRouteCanvasVisualizer\""
+param UsingCSMACA.visualizer.routingTableVisualizerType "\"RoutingTableCanvasVisualizer\""
+param UsingCSMACA.visualizer.transportRouteVisualizerType "\"TransportRouteCanvasVisualizer\""
+param UsingCSMACA.visualizer.transportConnectionVisualizerType "\"TransportConnectionCanvasVisualizer\""
+param UsingCSMACA.visualizer.sceneVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.sceneVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.sceneVisualizer.physicalEnvironmentModule "\"physicalEnvironment\""
+param UsingCSMACA.visualizer.sceneVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.sceneVisualizer.axisLength 0m/0
+param UsingCSMACA.visualizer.sceneVisualizer.animationSpeed 0
+param UsingCSMACA.visualizer.sceneVisualizer.zIndex 0
+param UsingCSMACA.visualizer.sceneVisualizer.viewAngle "\"z\""
+param UsingCSMACA.visualizer.sceneVisualizer.viewScale "\"1 1\""
+param UsingCSMACA.visualizer.sceneVisualizer.viewTranslation "\"0 0\""
+param UsingCSMACA.visualizer.sceneVisualizer.descriptionFigure "\"\""
+param UsingCSMACA.visualizer.physicalEnvironmentVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.physicalEnvironmentVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.physicalEnvironmentVisualizer.physicalEnvironmentModule "\"physicalEnvironment\""
+param UsingCSMACA.visualizer.physicalEnvironmentVisualizer.displayObjects true
+param UsingCSMACA.visualizer.physicalEnvironmentVisualizer.zIndex 0
+param UsingCSMACA.visualizer.networkNodeVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.networkNodeVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.networkNodeVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.networkNodeVisualizer.annotationSpacing 4
+param UsingCSMACA.visualizer.networkNodeVisualizer.placementPenalty 10
+param UsingCSMACA.visualizer.networkNodeVisualizer.zIndex 0
+param UsingCSMACA.visualizer.networkConnectionVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.networkConnectionVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.networkConnectionVisualizer.displayNetworkConnections true
+param UsingCSMACA.visualizer.networkConnectionVisualizer.nodeFilter "\"\""
+param UsingCSMACA.visualizer.networkConnectionVisualizer.lineColor "\"black\""
+param UsingCSMACA.visualizer.networkConnectionVisualizer.lineStyle "\"solid\""
+param UsingCSMACA.visualizer.networkConnectionVisualizer.lineWidth 1
+param UsingCSMACA.visualizer.networkConnectionVisualizer.zIndex 0
+param UsingCSMACA.visualizer.mobilityVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.mobilityVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.mobilityVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.mobilityVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.mobilityVisualizer.displayMovements true
+param UsingCSMACA.visualizer.mobilityVisualizer.animationSpeed 0
+param UsingCSMACA.visualizer.mobilityVisualizer.moduleFilter "\"**\""
+param UsingCSMACA.visualizer.mobilityVisualizer.displayOrientations false
+param UsingCSMACA.visualizer.mobilityVisualizer.orientationArcSize 0.25
+param UsingCSMACA.visualizer.mobilityVisualizer.orientationLineColor "\"black\""
+param UsingCSMACA.visualizer.mobilityVisualizer.orientationLineStyle "\"solid\""
+param UsingCSMACA.visualizer.mobilityVisualizer.orientationLineWidth 1
+param UsingCSMACA.visualizer.mobilityVisualizer.displayVelocities false
+param UsingCSMACA.visualizer.mobilityVisualizer.velocityArrowScale 1
+param UsingCSMACA.visualizer.mobilityVisualizer.velocityLineColor "\"black\""
+param UsingCSMACA.visualizer.mobilityVisualizer.velocityLineStyle "\"solid\""
+param UsingCSMACA.visualizer.mobilityVisualizer.velocityLineWidth 1
+param UsingCSMACA.visualizer.mobilityVisualizer.displayMovementTrails false
+param UsingCSMACA.visualizer.mobilityVisualizer.movementTrailLineColor "\"dark\""
+param UsingCSMACA.visualizer.mobilityVisualizer.movementTrailLineStyle "\"solid\""
+param UsingCSMACA.visualizer.mobilityVisualizer.movementTrailLineWidth 1
+param UsingCSMACA.visualizer.mobilityVisualizer.trailLength 100
+param UsingCSMACA.visualizer.mobilityVisualizer.zIndex 0
+param UsingCSMACA.visualizer.statisticVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.statisticVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.statisticVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.statisticVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.statisticVisualizer.displayStatistics true
+param UsingCSMACA.visualizer.statisticVisualizer.signalName "\"\""
+param UsingCSMACA.visualizer.statisticVisualizer.sourceFilter "\"**\""
+param UsingCSMACA.visualizer.statisticVisualizer.format "\"%n: %v %u\""
+param UsingCSMACA.visualizer.statisticVisualizer.unit "\"\""
+param UsingCSMACA.visualizer.statisticVisualizer.font "\"<default>\""
+param UsingCSMACA.visualizer.statisticVisualizer.textColor "\"black\""
+param UsingCSMACA.visualizer.statisticVisualizer.backgroundColor "\"white\""
+param UsingCSMACA.visualizer.statisticVisualizer.opacity 1.0
+param UsingCSMACA.visualizer.statisticVisualizer.placementHint "\"top\""
+param UsingCSMACA.visualizer.statisticVisualizer.placementPriority 0
+param UsingCSMACA.visualizer.statisticVisualizer.zIndex 10
+param UsingCSMACA.visualizer.infoVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.infoVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.infoVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.infoVisualizer.displayInfos true
+param UsingCSMACA.visualizer.infoVisualizer.modules "\"\""
+param UsingCSMACA.visualizer.infoVisualizer.format "\"%s\""
+param UsingCSMACA.visualizer.infoVisualizer.font "\"<default>\""
+param UsingCSMACA.visualizer.infoVisualizer.textColor "\"black\""
+param UsingCSMACA.visualizer.infoVisualizer.backgroundColor "\"white\""
+param UsingCSMACA.visualizer.infoVisualizer.opacity 1.0
+param UsingCSMACA.visualizer.infoVisualizer.placementHint "\"top\""
+param UsingCSMACA.visualizer.infoVisualizer.placementPriority 0
+param UsingCSMACA.visualizer.infoVisualizer.zIndex 10
+param UsingCSMACA.visualizer.energyStorageVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.energyStorageVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.energyStorageVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.energyStorageVisualizer.displayEnergyStorages false
+param UsingCSMACA.visualizer.energyStorageVisualizer.energyStorageFilter "\"**\""
+param UsingCSMACA.visualizer.energyStorageVisualizer.color "\"green\""
+param UsingCSMACA.visualizer.energyStorageVisualizer.width 8
+param UsingCSMACA.visualizer.energyStorageVisualizer.height 24
+param UsingCSMACA.visualizer.energyStorageVisualizer.spacing 2
+param UsingCSMACA.visualizer.energyStorageVisualizer.placementHint "\"right\""
+param UsingCSMACA.visualizer.energyStorageVisualizer.placementPriority 0
+param UsingCSMACA.visualizer.energyStorageVisualizer.zIndex 10
+param UsingCSMACA.visualizer.mediumVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.mediumVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.mediumVisualizer.mediumModule "\"radioMedium\""
+param UsingCSMACA.visualizer.mediumVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.mediumVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.mediumVisualizer.interfaceFilter "\"*\""
+param UsingCSMACA.visualizer.mediumVisualizer.packetFilter "\"*\""
+param UsingCSMACA.visualizer.mediumVisualizer.displaySignals false
+param UsingCSMACA.visualizer.mediumVisualizer.signalColor "\"dark\""
+param UsingCSMACA.visualizer.mediumVisualizer.signalPropagationAnimationSpeed 0/0
+param UsingCSMACA.visualizer.mediumVisualizer.signalPropagationAnimationTime 1s
+param UsingCSMACA.visualizer.mediumVisualizer.signalPropagationAdditionalTime 0s
+param UsingCSMACA.visualizer.mediumVisualizer.signalTransmissionAnimationSpeed 0/0
+param UsingCSMACA.visualizer.mediumVisualizer.signalTransmissionAnimationTime 1s
+param UsingCSMACA.visualizer.mediumVisualizer.signalAnimationSpeedChangeTime 1s
+param UsingCSMACA.visualizer.mediumVisualizer.displayTransmissions false
+param UsingCSMACA.visualizer.mediumVisualizer.transmissionImage "\"misc/transmission.png\""
+param UsingCSMACA.visualizer.mediumVisualizer.transmissionPlacementHint "\"topCenter\""
+param UsingCSMACA.visualizer.mediumVisualizer.transmissionPlacementPriority 1
+param UsingCSMACA.visualizer.mediumVisualizer.displayReceptions false
+param UsingCSMACA.visualizer.mediumVisualizer.receptionImage "\"misc/reception.png\""
+param UsingCSMACA.visualizer.mediumVisualizer.receptionPlacementHint "\"topCenter\""
+param UsingCSMACA.visualizer.mediumVisualizer.receptionPlacementPriority -1
+param UsingCSMACA.visualizer.mediumVisualizer.displayCommunicationRanges false
+param UsingCSMACA.visualizer.mediumVisualizer.communicationRangeLineColor "\"blue\""
+param UsingCSMACA.visualizer.mediumVisualizer.communicationRangeLineStyle "\"solid\""
+param UsingCSMACA.visualizer.mediumVisualizer.communicationRangeLineWidth 1
+param UsingCSMACA.visualizer.mediumVisualizer.displayInterferenceRanges false
+param UsingCSMACA.visualizer.mediumVisualizer.interferenceRangeLineColor "\"gray\""
+param UsingCSMACA.visualizer.mediumVisualizer.interferenceRangeLineStyle "\"solid\""
+param UsingCSMACA.visualizer.mediumVisualizer.interferenceRangeLineWidth 1
+param UsingCSMACA.visualizer.mediumVisualizer.zIndex 0
+param UsingCSMACA.visualizer.mediumVisualizer.signalShape "\"ring\""
+param UsingCSMACA.visualizer.mediumVisualizer.signalOpacity 0.5
+param UsingCSMACA.visualizer.mediumVisualizer.signalRingCount 20
+param UsingCSMACA.visualizer.mediumVisualizer.signalRingSize 50m
+param UsingCSMACA.visualizer.mediumVisualizer.signalFadingDistance 50m
+param UsingCSMACA.visualizer.mediumVisualizer.signalFadingFactor 1.2
+param UsingCSMACA.visualizer.mediumVisualizer.signalWaveCount 20
+param UsingCSMACA.visualizer.mediumVisualizer.signalWaveLength 50m
+param UsingCSMACA.visualizer.mediumVisualizer.signalWaveWidth 10m
+param UsingCSMACA.visualizer.mediumVisualizer.signalWaveFadingAnimationSpeedFactor 1
+param UsingCSMACA.visualizer.mediumVisualizer.displayCommunicationHeat false
+param UsingCSMACA.visualizer.obstacleLossVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.displayIntersections false
+param UsingCSMACA.visualizer.obstacleLossVisualizer.intersectionLineColor "\"red\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.intersectionLineStyle "\"solid\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.intersectionLineWidth 1
+param UsingCSMACA.visualizer.obstacleLossVisualizer.displayFaceNormalVectors false
+param UsingCSMACA.visualizer.obstacleLossVisualizer.faceNormalLineColor "\"grey\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.faceNormalLineStyle "\"solid\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.faceNormalLineWidth 1
+param UsingCSMACA.visualizer.obstacleLossVisualizer.fadeOutMode "\"realTime\""
+param UsingCSMACA.visualizer.obstacleLossVisualizer.fadeOutTime 1s
+param UsingCSMACA.visualizer.obstacleLossVisualizer.fadeOutAnimationSpeed 0
+param UsingCSMACA.visualizer.obstacleLossVisualizer.zIndex 0
+param UsingCSMACA.visualizer.packetDropVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.packetDropVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.packetDropVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.packetDropVisualizer.displayPacketDrops false
+param UsingCSMACA.visualizer.packetDropVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.packetDropVisualizer.interfaceFilter "\"*\""
+param UsingCSMACA.visualizer.packetDropVisualizer.packetFilter "\"*\""
+param UsingCSMACA.visualizer.packetDropVisualizer.icon "\"msg/packet_s\""
+param UsingCSMACA.visualizer.packetDropVisualizer.iconTintAmount 0
+param UsingCSMACA.visualizer.packetDropVisualizer.iconTintColor "\"\""
+param UsingCSMACA.visualizer.packetDropVisualizer.labelFont "\"<default>\""
+param UsingCSMACA.visualizer.packetDropVisualizer.labelColor "\"black\""
+param UsingCSMACA.visualizer.packetDropVisualizer.fadeOutMode "\"realTime\""
+param UsingCSMACA.visualizer.packetDropVisualizer.fadeOutTime 1s
+param UsingCSMACA.visualizer.packetDropVisualizer.fadeOutAnimationSpeed 0
+param UsingCSMACA.visualizer.packetDropVisualizer.zIndex 10
+param UsingCSMACA.visualizer.queueVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.queueVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.queueVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.queueVisualizer.displayQueues false
+param UsingCSMACA.visualizer.queueVisualizer.queueFilter "\"**\""
+param UsingCSMACA.visualizer.queueVisualizer.color "\"blue\""
+param UsingCSMACA.visualizer.queueVisualizer.width 8
+param UsingCSMACA.visualizer.queueVisualizer.height 24
+param UsingCSMACA.visualizer.queueVisualizer.spacing 2
+param UsingCSMACA.visualizer.queueVisualizer.placementHint "\"right\""
+param UsingCSMACA.visualizer.queueVisualizer.placementPriority 0
+param UsingCSMACA.visualizer.queueVisualizer.zIndex 10
+param UsingCSMACA.visualizer.radioVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.radioVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.radioVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.radioVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.radioVisualizer.displayRadios false
+param UsingCSMACA.visualizer.radioVisualizer.displayRadioMode true
+param UsingCSMACA.visualizer.radioVisualizer.displayReceptionState true
+param UsingCSMACA.visualizer.radioVisualizer.displayTransmissionState true
+param UsingCSMACA.visualizer.radioVisualizer.radioFilter "\"**\""
+param UsingCSMACA.visualizer.radioVisualizer.radioModeImages "\"block/process_vs block/timer_vs block/wrx_vs block/wtx_vs block/wrxtx_vs block/cogwheel_vs\""
+param UsingCSMACA.visualizer.radioVisualizer.receptionStateImages "\"- - misc/reception misc/reception\""
+param UsingCSMACA.visualizer.radioVisualizer.transmissionStateImages "\"- - misc/transmission\""
+param UsingCSMACA.visualizer.radioVisualizer.width 16
+param UsingCSMACA.visualizer.radioVisualizer.height 16
+param UsingCSMACA.visualizer.radioVisualizer.placementHint "\"bottomRight\""
+param UsingCSMACA.visualizer.radioVisualizer.placementPriority 0
+param UsingCSMACA.visualizer.radioVisualizer.zIndex 10
+param UsingCSMACA.visualizer.physicalLinkVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.displayLinks false
+param UsingCSMACA.visualizer.physicalLinkVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.interfaceFilter "\"*\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.packetFilter "\"*\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.lineColor "\"olive\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.lineStyle "\"dotted\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.lineWidth 3
+param UsingCSMACA.visualizer.physicalLinkVisualizer.lineShift 16
+param UsingCSMACA.visualizer.physicalLinkVisualizer.lineShiftMode "\"normal\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.lineContactSpacing 3
+param UsingCSMACA.visualizer.physicalLinkVisualizer.lineContactMode "\"rectangular\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.labelFormat "\"%n\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.labelFont "\"<default>, 8px\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.labelColor "\"olive\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.fadeOutMode "\"realTime\""
+param UsingCSMACA.visualizer.physicalLinkVisualizer.fadeOutTime 1s
+param UsingCSMACA.visualizer.physicalLinkVisualizer.fadeOutAnimationSpeed 0
+param UsingCSMACA.visualizer.physicalLinkVisualizer.zIndex 1
+param UsingCSMACA.visualizer.interfaceTableVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.displayInterfaceTables false
+param UsingCSMACA.visualizer.interfaceTableVisualizer.displayWiredInterfacesAtConnections true
+param UsingCSMACA.visualizer.interfaceTableVisualizer.displayBackground false
+param UsingCSMACA.visualizer.interfaceTableVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.interfaceFilter "\"not(lo*)\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.format "\"%N %\\\\%a/%l\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.placementHint "\"top\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.placementPriority 0
+param UsingCSMACA.visualizer.interfaceTableVisualizer.font "\"<default>\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.textColor "\"#005030\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.backgroundColor "\"white\""
+param UsingCSMACA.visualizer.interfaceTableVisualizer.opacity 1.0
+param UsingCSMACA.visualizer.interfaceTableVisualizer.zIndex 10
+param UsingCSMACA.visualizer.dataLinkVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.displayLinks false
+param UsingCSMACA.visualizer.dataLinkVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.interfaceFilter "\"*\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.packetFilter "\"*\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.lineColor "\"darkcyan\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.lineStyle "\"solid\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.lineWidth 3
+param UsingCSMACA.visualizer.dataLinkVisualizer.lineShift 16
+param UsingCSMACA.visualizer.dataLinkVisualizer.lineShiftMode "\"normal\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.lineContactSpacing 3
+param UsingCSMACA.visualizer.dataLinkVisualizer.lineContactMode "\"rectangular\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.labelFormat "\"%n\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.labelFont "\"<default>, 8px\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.labelColor "\"darkcyan\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.fadeOutMode "\"realTime\""
+param UsingCSMACA.visualizer.dataLinkVisualizer.fadeOutTime 1s
+param UsingCSMACA.visualizer.dataLinkVisualizer.fadeOutAnimationSpeed 0
+param UsingCSMACA.visualizer.dataLinkVisualizer.zIndex 2
+param UsingCSMACA.visualizer.linkBreakVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.displayLinkBreaks false
+param UsingCSMACA.visualizer.linkBreakVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.interfaceFilter "\"*\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.packetFilter "\"*\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.icon "\"status/stop\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.iconTintAmount 0
+param UsingCSMACA.visualizer.linkBreakVisualizer.iconTintColor "\"\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.fadeOutMode "\"realTime\""
+param UsingCSMACA.visualizer.linkBreakVisualizer.fadeOutTime 1s
+param UsingCSMACA.visualizer.linkBreakVisualizer.fadeOutAnimationSpeed 0
+param UsingCSMACA.visualizer.linkBreakVisualizer.zIndex 2
+param UsingCSMACA.visualizer.ieee80211Visualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.tags "\"\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.displayAssociations false
+param UsingCSMACA.visualizer.ieee80211Visualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.interfaceFilter "\"*\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.icon "\"misc/signal_s\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.iconColor "\"dark\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.labelFont "\"<default>\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.labelColor "\"black\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.placementHint "\"top\""
+param UsingCSMACA.visualizer.ieee80211Visualizer.placementPriority 0
+param UsingCSMACA.visualizer.ieee80211Visualizer.zIndex 2
+param UsingCSMACA.visualizer.networkRouteVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.displayRoutes false
+param UsingCSMACA.visualizer.networkRouteVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.packetFilter "\"*\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineColor "\"dark\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineStyle "\"solid\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineWidth 3
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineSmooth false
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineShift 16
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineShiftMode "\"normal\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineContactSpacing 3
+param UsingCSMACA.visualizer.networkRouteVisualizer.lineContactMode "\"rectangular\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.labelFormat "\"%n\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.labelFont "\"<default>, 8px\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.labelColor "\"\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.fadeOutMode "\"realTime\""
+param UsingCSMACA.visualizer.networkRouteVisualizer.fadeOutTime 1s
+param UsingCSMACA.visualizer.networkRouteVisualizer.fadeOutAnimationSpeed 0
+param UsingCSMACA.visualizer.networkRouteVisualizer.zIndex 3
+param UsingCSMACA.visualizer.routingTableVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.routingTableVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.routingTableVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.routingTableVisualizer.displayRoutingTables false
+param UsingCSMACA.visualizer.routingTableVisualizer.displayRoutesIndividually true
+param UsingCSMACA.visualizer.routingTableVisualizer.displayLabels true
+param UsingCSMACA.visualizer.routingTableVisualizer.destinationFilter "\"*\""
+param UsingCSMACA.visualizer.routingTableVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.routingTableVisualizer.lineColor "\"black\""
+param UsingCSMACA.visualizer.routingTableVisualizer.lineStyle "\"solid\""
+param UsingCSMACA.visualizer.routingTableVisualizer.lineWidth 2
+param UsingCSMACA.visualizer.routingTableVisualizer.lineShift 16
+param UsingCSMACA.visualizer.routingTableVisualizer.lineShiftMode "\"normal\""
+param UsingCSMACA.visualizer.routingTableVisualizer.lineContactSpacing 3
+param UsingCSMACA.visualizer.routingTableVisualizer.lineContactMode "\"rectangular\""
+param UsingCSMACA.visualizer.routingTableVisualizer.labelFormat "\"%d/%m -> %g (%n)\""
+param UsingCSMACA.visualizer.routingTableVisualizer.labelFont "\"<default>, 8px\""
+param UsingCSMACA.visualizer.routingTableVisualizer.labelColor "\"black\""
+param UsingCSMACA.visualizer.routingTableVisualizer.zIndex 0
+param UsingCSMACA.visualizer.transportRouteVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.displayRoutes false
+param UsingCSMACA.visualizer.transportRouteVisualizer.nodeFilter "\"*\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.packetFilter "\"*\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineColor "\"dark\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineStyle "\"solid\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineWidth 3
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineSmooth false
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineShift 16
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineShiftMode "\"normal\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineContactSpacing 3
+param UsingCSMACA.visualizer.transportRouteVisualizer.lineContactMode "\"rectangular\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.labelFormat "\"%n\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.labelFont "\"<default>, 8px\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.labelColor "\"\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.fadeOutMode "\"realTime\""
+param UsingCSMACA.visualizer.transportRouteVisualizer.fadeOutTime 1s
+param UsingCSMACA.visualizer.transportRouteVisualizer.fadeOutAnimationSpeed 0
+param UsingCSMACA.visualizer.transportRouteVisualizer.zIndex 4
+param UsingCSMACA.visualizer.transportConnectionVisualizer.visualizerTargetModule "\"<root>\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.tags "\"\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.networkNodeVisualizerModule "\"^.networkNodeVisualizer\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.subscriptionModule "\"<root>\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.displayTransportConnections false
+param UsingCSMACA.visualizer.transportConnectionVisualizer.sourceNodeFilter "\"*\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.sourcePortFilter "\"*\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.destinationNodeFilter "\"*\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.destinationPortFilter "\"*\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.icon "\"misc/marker_s\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.iconColor "\"dark\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.labelFont "\"<default>\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.labelColor "\"black\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.placementHint "\"top\""
+param UsingCSMACA.visualizer.transportConnectionVisualizer.placementPriority 0
+param UsingCSMACA.visualizer.transportConnectionVisualizer.zIndex 4
+
+vector 0 UsingCSMACA.host[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 UsingCSMACA.host[0].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 2 UsingCSMACA.host[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 UsingCSMACA.host[1].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 4 UsingCSMACA.host[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 UsingCSMACA.host[2].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 6 UsingCSMACA.host[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 UsingCSMACA.host[3].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 8 UsingCSMACA.host[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 9 UsingCSMACA.host[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 10 UsingCSMACA.host[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 11 UsingCSMACA.host[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 12 UsingCSMACA.host[0].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 13 UsingCSMACA.host[0].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 14 UsingCSMACA.host[0].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 15 UsingCSMACA.host[0].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 16 UsingCSMACA.host[0].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 17 UsingCSMACA.host[1].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 18 UsingCSMACA.host[1].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 19 UsingCSMACA.host[1].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 20 UsingCSMACA.host[1].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 21 UsingCSMACA.host[1].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 22 UsingCSMACA.host[2].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 23 UsingCSMACA.host[2].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 24 UsingCSMACA.host[2].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 25 UsingCSMACA.host[2].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 26 UsingCSMACA.host[2].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 27 UsingCSMACA.host[3].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 28 UsingCSMACA.host[3].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 29 UsingCSMACA.host[3].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 30 UsingCSMACA.host[3].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 31 UsingCSMACA.host[3].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 32 UsingCSMACA.host[1].pingApp[0] pingTxSeq:vector ETV
+attr interpolationmode none
+attr title "ping tx seq, vector"
+vector 33 UsingCSMACA.host[1].networkLayer.arp sentReq:vector ETV
+attr title "ARP request sent, vector"
+vector 34 UsingCSMACA.host[1].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 35 UsingCSMACA.host[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 36 UsingCSMACA.host[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 37 UsingCSMACA.host[3].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 38 UsingCSMACA.host[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 39 UsingCSMACA.host[2].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 40 UsingCSMACA.host[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 41 UsingCSMACA.host[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 42 UsingCSMACA.host[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 43 UsingCSMACA.host[0].networkLayer.arp sentReply:vector ETV
+attr title "ARP replies sent, vector"
+vector 44 UsingCSMACA.host[0].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 45 UsingCSMACA.host[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 46 UsingCSMACA.host[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 47 UsingCSMACA.host[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 48 UsingCSMACA.host[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 49 UsingCSMACA.host[1].pingApp[0] pingRxSeq:vector ETV
+attr interpolationmode none
+attr title "ping rx seq, vector"
+vector 50 UsingCSMACA.host[1].pingApp[0] rtt:vector ETV
+attr interpolationmode none
+attr title "ping round-trip time, vector"
+attr unit s
+vector 51 UsingCSMACA.host[3].pingApp[0] pingTxSeq:vector ETV
+attr interpolationmode none
+attr title "ping tx seq, vector"
+vector 52 UsingCSMACA.host[3].networkLayer.arp sentReq:vector ETV
+attr title "ARP request sent, vector"
+vector 53 UsingCSMACA.host[3].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 54 UsingCSMACA.host[3].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 55 UsingCSMACA.host[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 56 UsingCSMACA.host[2].networkLayer.arp sentReply:vector ETV
+attr title "ARP replies sent, vector"
+vector 57 UsingCSMACA.host[2].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 58 UsingCSMACA.host[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 59 UsingCSMACA.host[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 60 UsingCSMACA.host[3].pingApp[0] pingRxSeq:vector ETV
+attr interpolationmode none
+attr title "ping rx seq, vector"
+vector 61 UsingCSMACA.host[3].pingApp[0] rtt:vector ETV
+attr interpolationmode none
+attr title "ping round-trip time, vector"
+attr unit s
+0	66842 27950 0 55107 0 254.549253564757 1028 0 3 2567 6673
+1	94792 9 0 0 0 0 1 0 0 0 0
+2	94801 28232 0 55284 0 255.548859502304 1036 0 3 2587 6725
+3	123033 9 0 0 0 0 1 0 0 0 0
+4	123042 28014 0 55197 0 254.59348469451 1028 0 3 2567 6673
+5	151056 9 0 0 0 0 1 0 0 0 0
+6	151065 28197 0 55217 0 254.59374277263 1034 0 3 2582 6712
+7	179262 9 0 0 0 0 1 0 0 0 0
+8	179271 112162 0 55285 0 255.548859555893 4119 0 3 6698 15974
+9	291433 112243 0 55284 0 255.548859502304 4119 0 3 6686 15938
+10	403676 116436 0 55293 0 255.548859629669 4119 0 3 6698 15974
+11	520112 116437 0 55295 0 255.548859674395 4119 0 3 6689 15947
+12	636549 232580 0 55292 0 255.548859555893 8240 0 2 2564 4618
+13	869129 203402 0 55285 0 255.548859555893 7206 0 0 0 0
+14	1072531 203402 0 55285 0 255.548859555893 7206 0 0 0 0
+15	1275933 203402 0 55285 0 255.548859555893 7206 0 0 0 0
+16	1479335 203402 0 55285 0 255.548859555893 7206 0 0 0 0
+17	1682737 233160 0 55278 0 255.548813502304 8252 0 2 1054 2102
+18	1915897 203778 0 55278 0 255.548813502304 7216 0 0 0 0
+19	2119675 203778 0 55278 0 255.548813502304 7216 0 0 0 0
+20	2323453 203778 0 55278 0 255.548813502304 7216 0 0 0 0
+21	2527231 203778 0 55278 0 255.548813502304 7216 0 0 0 0
+22	2731009 232936 0 55294 0 255.548859629669 8240 0 2 2562 4614
+23	2963945 203748 0 55294 0 255.548859629669 7208 0 0 0 0
+24	3167693 203748 0 55294 0 255.548859629669 7208 0 0 0 0
+25	3371441 203748 0 55294 0 255.548859629669 7208 0 0 0 0
+26	3575189 203748 0 55294 0 255.548859629669 7208 0 0 0 0
+27	3778937 233346 0 55296 0 255.548859674395 8252 0 2 1050 2094
+28	4012283 204074 0 55296 0 255.548859674395 7220 0 0 0 0
+29	4216357 204074 0 55296 0 255.548859674395 7220 0 0 0 0
+30	4420431 204074 0 55296 0 255.548859674395 7220 0 0 0 0
+31	4624505 204074 0 55296 0 255.548859674395 7220 0 0 0 0
+32	4828579 7665 29 55270 0.548813502304 255.548813502304 256 0 255 32640 5559680
+33	4836244 82 31 52335 0.548813502304 242.548813502304 3 1 1 3 3
+34	4836326 7860 34 55274 0.548813502304 255.548813502304 259 64 120 30912 3698688
+35	4844186 15397 37 55277 0.548813502304 255.548813502304 517 14 120 34524 3749256
+36	4859583 58496 38 55284 0.548813502304 255.548859502304 2068 0 2 2068 3102
+37	4918079 45917 46 55296 0.549261536678 255.548859674395 1543 14 120 103248 11217792
+38	4963996 7885 46 55199 0.549261536678 254.59348477263 261 64 120 30984 3696576
+39	4971881 46014 51 55294 0.549261540355 255.548859629669 1546 14 120 103290 11218380
+40	5017895 7895 51 55159 0.549261540355 254.59289069451 261 64 120 30984 3696576
+41	5025790 45969 56 55286 0.549261649949 255.548859555893 1546 14 120 103290 11218380
+42	5071759 7908 56 55286 0.549261649949 255.548859555893 262 64 120 31104 3710976
+43	5079667 81 59 52353 0.549261649949 242.54926153917 3 1 1 3 3
+44	5079748 7824 62 55292 0.549261649949 255.548859555893 259 64 120 30912 3698688
+45	5087572 15247 65 55100 0.549311649949 254.549207564757 513 14 120 34362 3734268
+46	5102819 57916 66 55107 0.549311649949 254.549253564757 2052 0 2 2052 3078
+47	5160735 45859 76 55223 0.549349797573 254.59374290716 1542 14 120 103128 11203392
+48	5206594 7877 76 55109 0.549349797573 254.549253627188 261 64 120 30984 3696576
+49	5214471 7596 159 55113 0.550658092747 254.549253627188 255 0 254 32385 5494655
+50	5222067 10488 159 55113 0.550658092747 254.549253627188 255 0.000400071956 0.001844590443 0.184876637252 0.00014650300520459
+51	5232555 7635 187 55143 0.592844616389 254.592844616389 255 0 254 32385 5494655
+52	5240190 83 189 52494 0.592844616389 242.592844616389 3 1 1 3 3
+53	5240273 7831 192 55147 0.592844616389 254.592844616389 258 64 120 30792 3684288
+54	5248104 15376 195 55208 0.592844616389 254.59349477263 516 14 120 34404 3734856
+55	5263480 58422 196 55217 0.592844616389 254.59374277263 2064 0 2 2064 3096
+56	5321902 83 207 52522 0.593292635426 242.593292727421 3 1 1 3 3
+57	5321985 7810 210 55165 0.593292635426 254.59289069451 258 64 120 30792 3684288
+58	5329795 15279 223 55190 0.593482635426 254.59343869451 513 14 120 34362 3734268
+59	5345074 58044 224 55197 0.593482635426 254.59348469451 2052 0 2 2052 3078
+60	5403118 7604 315 55203 0.594788692785 254.59348477263 255 0 254 32385 5494655
+61	5410722 10504 315 55203 0.594788692785 254.59348477263 255 0.000400025577 0.002264299171 0.18511396391 0.0001482317232566
+
